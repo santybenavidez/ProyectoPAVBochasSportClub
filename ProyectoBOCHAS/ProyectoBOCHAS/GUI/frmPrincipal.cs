@@ -20,7 +20,7 @@ namespace ProyectoBOCHAS
         
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
@@ -42,6 +42,41 @@ namespace ProyectoBOCHAS
         {
             frmUsuario frmUsuario = new frmUsuario();
             frmUsuario.Show();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            frmBecas frmBecas = new frmBecas();
+            frmBecas.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            frmSocios frmSocios = new frmSocios();
+            frmSocios.Show();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            frmDisciplinas frmDisciplinas = new frmDisciplinas();
+            frmDisciplinas.Show();
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProductos frmProductos = new frmProductos();
+            frmProductos.ShowDialog();
+        }
+
+        private void inscripcionADisciplinaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inscripcionDeSocioADisciplinaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInscripcionADisciplina inscripcionADisciplina = new frmInscripcionADisciplina();
+            inscripcionADisciplina.ShowDialog();
         }
     }
 }

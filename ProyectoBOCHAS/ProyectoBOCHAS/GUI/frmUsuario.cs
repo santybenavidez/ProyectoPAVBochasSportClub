@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoBOCHAS.GUI;
 
 namespace ProyectoBOCHAS
 {
     public partial class frmUsuario : Form
     {
         Usuario usuario = new Usuario();
+
         public frmUsuario()
         {
             InitializeComponent();
@@ -71,14 +73,14 @@ namespace ProyectoBOCHAS
                     {
                         usuario.CargarUsuario(txtUsuario.Text, txtPassword.Text);
                         llenarGrilla(usuario.ConsultarUsuario(), dgvUsuario);
-                        cmdCargar.Enabled = false;
-                        cmdNuevo.Enabled = true;
+                        MessageBox.Show("Usuario creado", "Creacion exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DeshabilitarNuevo();
                     }
                 }
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) //Mostrar contraseña
         {
             if (checkBox1.CheckState == CheckState.Checked)
             {
@@ -108,6 +110,7 @@ namespace ProyectoBOCHAS
             cmdCancelar.Enabled = false;
             cmdNuevo.Enabled = true;
             cmdCargar.Enabled = false;
+            cmdModUsuario.Enabled = false;
         }
 
         private void HabilitarNuevo()
@@ -118,6 +121,14 @@ namespace ProyectoBOCHAS
             cmdCargar.Enabled = true;
             cmdCancelar.Enabled = true;
             cmdNuevo.Enabled = false;
+            cmdModUsuario.Enabled = true;
+        }
+
+        private void cmdModUsuario_Click(object sender, EventArgs e)
+        {
+            frmModUser fr = new frmModUser();
+            fr.ShowDialog();
+            llenarGrilla(usuario.ConsultarUsuario(), dgvUsuario);
         }
     }
 }
