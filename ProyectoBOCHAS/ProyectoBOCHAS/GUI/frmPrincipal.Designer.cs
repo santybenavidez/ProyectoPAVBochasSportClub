@@ -130,6 +130,7 @@
             this.inscripcionDeSocioABecasToolStripMenuItem.Name = "inscripcionDeSocioABecasToolStripMenuItem";
             this.inscripcionDeSocioABecasToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.inscripcionDeSocioABecasToolStripMenuItem.Text = "Inscripcion de socio a becas";
+            this.inscripcionDeSocioABecasToolStripMenuItem.Click += new System.EventHandler(this.inscripcionDeSocioABecasToolStripMenuItem_Click);
             // 
             // cobrosToolStripMenuItem
             // 

@@ -57,49 +57,44 @@
             // lblNroSocio
             // 
             this.lblNroSocio.AutoSize = true;
-            this.lblNroSocio.Location = new System.Drawing.Point(16, 9);
-            this.lblNroSocio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNroSocio.Location = new System.Drawing.Point(12, 7);
             this.lblNroSocio.Name = "lblNroSocio";
-            this.lblNroSocio.Size = new System.Drawing.Size(97, 17);
+            this.lblNroSocio.Size = new System.Drawing.Size(74, 13);
             this.lblNroSocio.TabIndex = 0;
             this.lblNroSocio.Text = "Numero Socio";
             // 
             // lblNomSocio
             // 
             this.lblNomSocio.AutoSize = true;
-            this.lblNomSocio.Location = new System.Drawing.Point(265, 9);
-            this.lblNomSocio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNomSocio.Location = new System.Drawing.Point(199, 7);
             this.lblNomSocio.Name = "lblNomSocio";
-            this.lblNomSocio.Size = new System.Drawing.Size(97, 17);
+            this.lblNomSocio.Size = new System.Drawing.Size(74, 13);
             this.lblNomSocio.TabIndex = 1;
             this.lblNomSocio.Text = "Nombre Socio";
             // 
             // lblDisciplina
             // 
             this.lblDisciplina.AutoSize = true;
-            this.lblDisciplina.Location = new System.Drawing.Point(16, 57);
-            this.lblDisciplina.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDisciplina.Location = new System.Drawing.Point(12, 46);
             this.lblDisciplina.Name = "lblDisciplina";
-            this.lblDisciplina.Size = new System.Drawing.Size(68, 17);
+            this.lblDisciplina.Size = new System.Drawing.Size(52, 13);
             this.lblDisciplina.TabIndex = 2;
             this.lblDisciplina.Text = "Disciplina";
             // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(295, 57);
-            this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCategoria.Location = new System.Drawing.Point(221, 46);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(69, 17);
+            this.lblCategoria.Size = new System.Drawing.Size(52, 13);
             this.lblCategoria.TabIndex = 4;
             this.lblCategoria.Text = "Categoria";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(184, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(138, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(47, 26);
+            this.button1.Size = new System.Drawing.Size(35, 21);
             this.button1.TabIndex = 5;
             this.button1.Text = ". . . ";
             this.button1.UseVisualStyleBackColor = true;
@@ -107,30 +102,27 @@
             // 
             // txtNroSocio
             // 
-            this.txtNroSocio.Location = new System.Drawing.Point(123, 4);
-            this.txtNroSocio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNroSocio.Location = new System.Drawing.Point(92, 3);
             this.txtNroSocio.Name = "txtNroSocio";
-            this.txtNroSocio.Size = new System.Drawing.Size(52, 22);
+            this.txtNroSocio.Size = new System.Drawing.Size(40, 20);
             this.txtNroSocio.TabIndex = 6;
             // 
             // txtNombreSocio
             // 
             this.txtNombreSocio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txtNombreSocio.Location = new System.Drawing.Point(405, 5);
-            this.txtNombreSocio.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreSocio.Location = new System.Drawing.Point(304, 4);
             this.txtNombreSocio.Name = "txtNombreSocio";
             this.txtNombreSocio.ReadOnly = true;
-            this.txtNombreSocio.Size = new System.Drawing.Size(433, 22);
+            this.txtNombreSocio.Size = new System.Drawing.Size(326, 20);
             this.txtNombreSocio.TabIndex = 7;
             // 
             // cmbCategoria
             // 
             this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(372, 53);
-            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbCategoria.Location = new System.Drawing.Point(279, 43);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(172, 24);
+            this.cmbCategoria.Size = new System.Drawing.Size(130, 21);
             this.cmbCategoria.TabIndex = 9;
             this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.cmbCategoria_SelectedIndexChanged);
             // 
@@ -138,19 +130,17 @@
             // 
             this.cmbDisciplinas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDisciplinas.FormattingEnabled = true;
-            this.cmbDisciplinas.Location = new System.Drawing.Point(93, 52);
-            this.cmbDisciplinas.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbDisciplinas.Location = new System.Drawing.Point(70, 42);
             this.cmbDisciplinas.Name = "cmbDisciplinas";
-            this.cmbDisciplinas.Size = new System.Drawing.Size(160, 24);
+            this.cmbDisciplinas.Size = new System.Drawing.Size(121, 21);
             this.cmbDisciplinas.TabIndex = 10;
             this.cmbDisciplinas.SelectedIndexChanged += new System.EventHandler(this.cmbDisciplinas_SelectedIndexChanged);
             // 
             // btnAñadir
             // 
-            this.btnAñadir.Location = new System.Drawing.Point(523, 86);
-            this.btnAñadir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAñadir.Location = new System.Drawing.Point(392, 70);
             this.btnAñadir.Name = "btnAñadir";
-            this.btnAñadir.Size = new System.Drawing.Size(100, 53);
+            this.btnAñadir.Size = new System.Drawing.Size(75, 43);
             this.btnAñadir.TabIndex = 11;
             this.btnAñadir.Text = "Añadir";
             this.btnAñadir.UseVisualStyleBackColor = true;
@@ -167,11 +157,10 @@
             this.disciplina,
             this.categoria,
             this.precioInscripcion});
-            this.dgvInscripcionSocioADisciplina.Location = new System.Drawing.Point(20, 146);
-            this.dgvInscripcionSocioADisciplina.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvInscripcionSocioADisciplina.Location = new System.Drawing.Point(15, 119);
             this.dgvInscripcionSocioADisciplina.Name = "dgvInscripcionSocioADisciplina";
             this.dgvInscripcionSocioADisciplina.RowHeadersVisible = false;
-            this.dgvInscripcionSocioADisciplina.Size = new System.Drawing.Size(820, 182);
+            this.dgvInscripcionSocioADisciplina.Size = new System.Drawing.Size(615, 148);
             this.dgvInscripcionSocioADisciplina.TabIndex = 12;
             // 
             // idSocio
@@ -201,10 +190,9 @@
             // 
             // btnRecibo
             // 
-            this.btnRecibo.Location = new System.Drawing.Point(739, 86);
-            this.btnRecibo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRecibo.Location = new System.Drawing.Point(554, 70);
             this.btnRecibo.Name = "btnRecibo";
-            this.btnRecibo.Size = new System.Drawing.Size(100, 53);
+            this.btnRecibo.Size = new System.Drawing.Size(75, 43);
             this.btnRecibo.TabIndex = 13;
             this.btnRecibo.Text = "Generar Recibo";
             this.btnRecibo.UseVisualStyleBackColor = true;
@@ -212,10 +200,9 @@
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(631, 86);
-            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(473, 70);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(100, 53);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(75, 43);
             this.btnLimpiarCampos.TabIndex = 14;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
@@ -224,46 +211,42 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(16, 105);
-            this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTotal.Location = new System.Drawing.Point(12, 85);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(101, 17);
+            this.lblTotal.Size = new System.Drawing.Size(76, 13);
             this.lblTotal.TabIndex = 15;
             this.lblTotal.Text = "Total a abonar";
             // 
             // lblPrecioInscripcion
             // 
             this.lblPrecioInscripcion.AutoSize = true;
-            this.lblPrecioInscripcion.Location = new System.Drawing.Point(567, 55);
-            this.lblPrecioInscripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPrecioInscripcion.Location = new System.Drawing.Point(425, 45);
             this.lblPrecioInscripcion.Name = "lblPrecioInscripcion";
-            this.lblPrecioInscripcion.Size = new System.Drawing.Size(119, 17);
+            this.lblPrecioInscripcion.Size = new System.Drawing.Size(90, 13);
             this.lblPrecioInscripcion.TabIndex = 16;
             this.lblPrecioInscripcion.Text = "Precio inscripcion";
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(144, 101);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotal.Location = new System.Drawing.Point(108, 82);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(109, 22);
+            this.txtTotal.Size = new System.Drawing.Size(83, 20);
             this.txtTotal.TabIndex = 17;
             // 
             // txtPrecioInscripcion
             // 
-            this.txtPrecioInscripcion.Location = new System.Drawing.Point(695, 52);
-            this.txtPrecioInscripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioInscripcion.Location = new System.Drawing.Point(521, 42);
             this.txtPrecioInscripcion.Name = "txtPrecioInscripcion";
             this.txtPrecioInscripcion.ReadOnly = true;
-            this.txtPrecioInscripcion.Size = new System.Drawing.Size(144, 22);
+            this.txtPrecioInscripcion.Size = new System.Drawing.Size(109, 20);
             this.txtPrecioInscripcion.TabIndex = 18;
             // 
             // frmInscripcionADisciplina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(913, 422);
+            this.ClientSize = new System.Drawing.Size(685, 343);
             this.Controls.Add(this.txtPrecioInscripcion);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lblPrecioInscripcion);
@@ -282,7 +265,6 @@
             this.Controls.Add(this.lblNomSocio);
             this.Controls.Add(this.lblNroSocio);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInscripcionADisciplina";
             this.Text = "Inscripcion Socio a Disciplina";
             this.Load += new System.EventHandler(this.frmInscripcionADisciplina_Load);

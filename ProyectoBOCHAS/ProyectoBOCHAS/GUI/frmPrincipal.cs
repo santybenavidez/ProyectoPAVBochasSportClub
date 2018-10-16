@@ -78,5 +78,11 @@ namespace ProyectoBOCHAS
             frmInscripcionADisciplina inscripcionADisciplina = new frmInscripcionADisciplina();
             inscripcionADisciplina.ShowDialog();
         }
+
+        private void inscripcionDeSocioABecasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInscripcionBeca pantallaInscripcionBeca = new frmInscripcionBeca();
+            pantallaInscripcionBeca.ShowDialog();
+        }
     }
 }

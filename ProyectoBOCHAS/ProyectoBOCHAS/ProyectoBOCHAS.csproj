@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\frmInscripcionBeca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmInscripcionBeca.Designer.cs">
+      <DependentUpon>frmInscripcionBeca.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmInscripcionADisciplina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,7 @@
     <Compile Include="GUI\frmTipoProducto.designer.cs">
       <DependentUpon>frmTipoProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="TRANSAcciones\InscripcionABeca.cs" />
     <Compile Include="Negocio\Categorias.cs" />
     <Compile Include="Negocio\Disciplinas.cs" />
     <Compile Include="GUI\frmCategorias.cs">
@@ -130,6 +137,9 @@
     <Compile Include="Validadores\Validadores.cs" />
     <EmbeddedResource Include="GUI\frmInscripcionADisciplina.resx">
       <DependentUpon>frmInscripcionADisciplina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmInscripcionBeca.resx">
+      <DependentUpon>frmInscripcionBeca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
