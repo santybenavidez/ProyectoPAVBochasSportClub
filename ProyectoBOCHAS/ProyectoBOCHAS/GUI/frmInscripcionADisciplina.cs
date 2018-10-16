@@ -116,8 +116,18 @@ namespace ProyectoBOCHAS
 
         private void btnRecibo_Click(object sender, EventArgs e)
         {
+            transaccion.realizarTransaccion();
             //con la datagridview hay que trabajar para meterlo todo en un recibo
             //CREO QUE HAY QUE HACER UN DETALLE DE RECIBO EN LA BASE DE DATOS
+
+            
+        }
+
+        public void prepararTransaccion()
+        {
+            transaccion.encabezadoInscripcionADisciplina(txtTotal.Text, "Proximamente..."); 
+            transaccion.detalleInscripcionADisciplina(dgvInscripcionSocioADisciplina);
         }
     }
+
 }
