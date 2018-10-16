@@ -83,6 +83,8 @@ namespace ProyectoBOCHAS
         {
             txtNombreSocio.Text = string.Empty;
             txtNroSocio.Text = string.Empty;
+            dgvInscripcionSocioADisciplina.Rows.Clear();
+            dgvInscripcionSocioADisciplina.Refresh();
         }
 
         private void btnAñadir_Click(object sender, EventArgs e)
@@ -116,18 +118,34 @@ namespace ProyectoBOCHAS
 
         private void btnRecibo_Click(object sender, EventArgs e)
         {
-            transaccion.realizarTransaccion();
-            //con la datagridview hay que trabajar para meterlo todo en un recibo
-            //CREO QUE HAY QUE HACER UN DETALLE DE RECIBO EN LA BASE DE DATOS
-
-            
-        }
-
-        public void prepararTransaccion()
-        {
-            transaccion.encabezadoInscripcionADisciplina(txtTotal.Text, "Proximamente..."); 
-            transaccion.detalleInscripcionADisciplina(dgvInscripcionSocioADisciplina);
+            if (dgvInscripcionSocioADisciplina.Rows.Count > 0)
+            {
+                transaccion.encabezadoInscripcionADisciplina(txtTotal.Text, "Inscripcion");
+                for (int i = 0; i < dgvInscripcionSocioADisciplina.Rows.Count; i++)
+                {
+                    DataTable tabla1 = new DataTable();
+                    DataTable tabla2 = new DataTable();
+                    tabla1 = transaccion.buscarIdDisciplina(dgvInscripcionSocioADisciplina.Rows[i].Cells["disciplina"].Value.ToString());
+                    tabla2 = transaccion.buscarIdCategoria(dgvInscripcionSocioADisciplina.Rows[i].Cells["categoria"].Value.ToString());
+                    int idSocio = Convert.ToInt32(dgvInscripcionSocioADisciplina.Rows[i].Cells["idSocio"].Value.ToString());
+                    int idDisciplina = Convert.ToInt32(tabla1.Rows[0][0]);
+                    int idCategoria = Convert.ToInt32(tabla2.Rows[0][0]);
+                    transaccion.detalleInscripcionADisciplina(idSocio, idDisciplina, idCategoria);
+                }
+                bool bandera = transaccion.realizarTransaccion();
+                if (bandera)
+                {
+                    MessageBox.Show("La inscripción se realizo", "Inscripción exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnLimpiarCampos_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Algo salio mal...", "Inscripción fallo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    btnLimpiarCampos_Click(sender, e);
+                }
+            }
+            else
+                MessageBox.Show("No cargo ninguna inscripción", "Validación de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
-
 }

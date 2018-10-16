@@ -40,7 +40,7 @@
             this.cmbDisciplinas = new System.Windows.Forms.ComboBox();
             this.btnAñadir = new System.Windows.Forms.Button();
             this.dgvInscripcionSocioADisciplina = new System.Windows.Forms.DataGridView();
-            this.nroSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.disciplina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,7 +97,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(184, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 26);
             this.button1.TabIndex = 5;
@@ -108,7 +108,7 @@
             // txtNroSocio
             // 
             this.txtNroSocio.Location = new System.Drawing.Point(123, 4);
-            this.txtNroSocio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNroSocio.Margin = new System.Windows.Forms.Padding(4);
             this.txtNroSocio.Name = "txtNroSocio";
             this.txtNroSocio.Size = new System.Drawing.Size(52, 22);
             this.txtNroSocio.TabIndex = 6;
@@ -117,7 +117,7 @@
             // 
             this.txtNombreSocio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtNombreSocio.Location = new System.Drawing.Point(405, 5);
-            this.txtNombreSocio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreSocio.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreSocio.Name = "txtNombreSocio";
             this.txtNombreSocio.ReadOnly = true;
             this.txtNombreSocio.Size = new System.Drawing.Size(433, 22);
@@ -128,7 +128,7 @@
             this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(372, 53);
-            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(172, 24);
             this.cmbCategoria.TabIndex = 9;
@@ -139,7 +139,7 @@
             this.cmbDisciplinas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDisciplinas.FormattingEnabled = true;
             this.cmbDisciplinas.Location = new System.Drawing.Point(93, 52);
-            this.cmbDisciplinas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbDisciplinas.Margin = new System.Windows.Forms.Padding(4);
             this.cmbDisciplinas.Name = "cmbDisciplinas";
             this.cmbDisciplinas.Size = new System.Drawing.Size(160, 24);
             this.cmbDisciplinas.TabIndex = 10;
@@ -148,7 +148,7 @@
             // btnAñadir
             // 
             this.btnAñadir.Location = new System.Drawing.Point(523, 86);
-            this.btnAñadir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAñadir.Margin = new System.Windows.Forms.Padding(4);
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Size = new System.Drawing.Size(100, 53);
             this.btnAñadir.TabIndex = 11;
@@ -162,22 +162,22 @@
             this.dgvInscripcionSocioADisciplina.AllowUserToDeleteRows = false;
             this.dgvInscripcionSocioADisciplina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvInscripcionSocioADisciplina.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nroSocio,
+            this.idSocio,
             this.nomSocio,
             this.disciplina,
             this.categoria,
             this.precioInscripcion});
             this.dgvInscripcionSocioADisciplina.Location = new System.Drawing.Point(20, 146);
-            this.dgvInscripcionSocioADisciplina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvInscripcionSocioADisciplina.Margin = new System.Windows.Forms.Padding(4);
             this.dgvInscripcionSocioADisciplina.Name = "dgvInscripcionSocioADisciplina";
             this.dgvInscripcionSocioADisciplina.RowHeadersVisible = false;
             this.dgvInscripcionSocioADisciplina.Size = new System.Drawing.Size(820, 182);
             this.dgvInscripcionSocioADisciplina.TabIndex = 12;
             // 
-            // nroSocio
+            // idSocio
             // 
-            this.nroSocio.HeaderText = "Numero Socio";
-            this.nroSocio.Name = "nroSocio";
+            this.idSocio.HeaderText = "Numero Socio";
+            this.idSocio.Name = "idSocio";
             // 
             // nomSocio
             // 
@@ -202,7 +202,7 @@
             // btnRecibo
             // 
             this.btnRecibo.Location = new System.Drawing.Point(739, 86);
-            this.btnRecibo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecibo.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecibo.Name = "btnRecibo";
             this.btnRecibo.Size = new System.Drawing.Size(100, 53);
             this.btnRecibo.TabIndex = 13;
@@ -213,7 +213,7 @@
             // btnLimpiarCampos
             // 
             this.btnLimpiarCampos.Location = new System.Drawing.Point(631, 86);
-            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(100, 53);
             this.btnLimpiarCampos.TabIndex = 14;
@@ -244,7 +244,7 @@
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(144, 101);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(109, 22);
@@ -253,7 +253,7 @@
             // txtPrecioInscripcion
             // 
             this.txtPrecioInscripcion.Location = new System.Drawing.Point(695, 52);
-            this.txtPrecioInscripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecioInscripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecioInscripcion.Name = "txtPrecioInscripcion";
             this.txtPrecioInscripcion.ReadOnly = true;
             this.txtPrecioInscripcion.Size = new System.Drawing.Size(144, 22);
@@ -282,7 +282,7 @@
             this.Controls.Add(this.lblNomSocio);
             this.Controls.Add(this.lblNroSocio);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInscripcionADisciplina";
             this.Text = "Inscripcion Socio a Disciplina";
             this.Load += new System.EventHandler(this.frmInscripcionADisciplina_Load);
@@ -305,16 +305,16 @@
         private System.Windows.Forms.ComboBox cmbDisciplinas;
         private System.Windows.Forms.Button btnAñadir;
         private System.Windows.Forms.DataGridView dgvInscripcionSocioADisciplina;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nroSocio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomSocio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn disciplina;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precioInscripcion;
         private System.Windows.Forms.Button btnRecibo;
         private System.Windows.Forms.Button btnLimpiarCampos;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lblPrecioInscripcion;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.TextBox txtPrecioInscripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idSocio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomSocio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn disciplina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioInscripcion;
     }
 }

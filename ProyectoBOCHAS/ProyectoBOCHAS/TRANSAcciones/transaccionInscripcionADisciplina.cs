@@ -14,8 +14,7 @@ namespace ProyectoBOCHAS
     {
         DBHelper oDatos;
         List<SqlCommand> lista = new List<SqlCommand>();
- 
-       
+
         public transaccionInscripcionADisciplina()
         {
             oDatos = new DBHelper();
@@ -60,31 +59,19 @@ namespace ProyectoBOCHAS
 
         public void encabezadoInscripcionADisciplina(string monto, string descripcion)
         {
-            SqlCommand comando = new SqlCommand("INSERT INTO Recibo VALUES (GETDATE(), @monto, @descripcion)");
+            SqlCommand comando = new SqlCommand("INSERT INTO Recibo (fechaRecibo, montoPagado, descripcion) VALUES (GETDATE(), @monto, @descripcion)");
             comando.Parameters.AddWithValue("@monto", monto);
             comando.Parameters.AddWithValue("@descripcion", descripcion);
             lista.Add(comando);
-
         }
 
-        public void detalleInscripcionADisciplina(DataGridView grilla)
+        public void detalleInscripcionADisciplina(int idSocio, int idDisciplina, int idCategoria)
         {
-           for (int i=0; i<grilla.Rows.Count; i++)
-           {
-                SqlCommand comando = new SqlCommand("INSERT INTO CategoriasXSocios VALUES (@idSocio, @idCategoria, 'S', @idDisciplina)");
-               DataTable tabla1 = new DataTable();
-               DataTable tabla2 = new DataTable();
-               tabla1 = buscarIdDisciplina(grilla.Rows[i].Cells["disciplina"].Value.ToString());
-               tabla2 = buscarIdCategoria(grilla.Rows[i].Cells["categoria"].Value.ToString());
-               int idSocio = Convert.ToInt32(grilla.Rows[i].Cells["idSocio"].Value.ToString());
-               int idDisciplina = Convert.ToInt32(tabla1.Rows[0][0]);
-               int idCategoria = Convert.ToInt32(tabla2.Rows[0][0]); 
-                comando.Parameters.AddWithValue("@idSocio", idSocio);
-                comando.Parameters.AddWithValue("@idCategoria", idCategoria);
-                comando.Parameters.AddWithValue("@idDisciplina", idDisciplina);
-                lista.Add(comando);   
-               
-           }
+            SqlCommand comando = new SqlCommand("INSERT INTO CategoriasXSocios VALUES (@idSocio, @idDisciplina, 'S', @idCategoria)");
+            comando.Parameters.AddWithValue("@idSocio", idSocio);
+            comando.Parameters.AddWithValue("@idCategoria", idCategoria);
+            comando.Parameters.AddWithValue("@idDisciplina", idDisciplina);
+            lista.Add(comando);
         }
 
         public DataTable buscarIdDisciplina(string nombreDisciplina)
@@ -99,17 +86,17 @@ namespace ProyectoBOCHAS
         public DataTable buscarIdCategoria(string nombreCategoria)
         {
             DataTable tabla = new DataTable();
-            SqlCommand comando = new SqlCommand("SELECT C.idCategoria FROM Disciplinas C WHERE C.nombre = @nombreCategoria");
+            SqlCommand comando = new SqlCommand("SELECT C.idCategoria FROM categorias C WHERE C.nombre = @nombreCategoria");
             comando.Parameters.AddWithValue("@nombreCategoria", nombreCategoria);
             tabla = oDatos.ConsultaSQL(comando);
             return tabla;
         }
 
-        public void realizarTransaccion()
+        public bool realizarTransaccion()
         {
-            //pantalla.prepararTransaccion();
-            oDatos.TransaccionSQL(lista);
+            bool bandera = oDatos.TransaccionSQL(lista);
             lista = new List<SqlCommand>();
+            return bandera;
         }
     } 
     

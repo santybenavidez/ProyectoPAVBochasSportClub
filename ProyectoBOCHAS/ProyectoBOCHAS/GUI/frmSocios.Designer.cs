@@ -77,7 +77,7 @@
             this.dgvSocios.RowHeadersVisible = false;
             this.dgvSocios.RowTemplate.Height = 24;
             this.dgvSocios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSocios.Size = new System.Drawing.Size(1483, 150);
+            this.dgvSocios.Size = new System.Drawing.Size(1183, 150);
             this.dgvSocios.TabIndex = 0;
             // 
             // idSocio

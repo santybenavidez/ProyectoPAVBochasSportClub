@@ -21,7 +21,7 @@ namespace ProyectoBOCHAS
 
         public DBHelper()
         {
-            cadenaConexion = @"Data Source=USUARIO-3WU9RFG\SQLEXPRESS;Initial Catalog=BDBochas;Integrated Security=True";
+            cadenaConexion = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=BDBochas;User ID=sa;password=1234";
             //Data Source=USUARIO-3WU9RFG\SQLEXPRESS;Initial Catalog=BDBochas;Integrated Security=True
             //@"Data Source=localhost\SQLEXPRESS;Initial Catalog=BDBochas;User ID=sa;password=1234"
             conexion = new SqlConnection(cadenaConexion);
@@ -58,8 +58,9 @@ namespace ProyectoBOCHAS
             Desconectar();
         }
 
-        public void TransaccionSQL(List<SqlCommand> comandos)
+        public bool TransaccionSQL(List<SqlCommand> comandos)
         {
+            bool bandera = false;
             conexion.Open();
             SqlTransaction transaccion;
             transaccion = conexion.BeginTransaction("transaccion");
@@ -72,6 +73,7 @@ namespace ProyectoBOCHAS
                     comandos[i].ExecuteNonQuery();
                 }
                 transaccion.Commit();
+                bandera = true;
             }
             catch(Exception e)
             {
@@ -79,6 +81,7 @@ namespace ProyectoBOCHAS
                 Console.WriteLine(e);
             }
             Desconectar();
+            return bandera;
         }
     }
 }

@@ -45,10 +45,18 @@ namespace ProyectoBOCHAS
             }
             else if (validadores.ValidarTxt(txtDni) && validadores.ValidarTxt(txtTelefono))
             {
-                socios.NuevoSocio(txtApellido.Text, txtNombre.Text, txtDireccion.Text, txtDni.Text, dtpFecha.Value.ToString("MM/dd/yyyy"), txtTelefono.Text, txtResponsable.Text);
-                llenarGrilla(socios.ConsultarSocio(), dgvSocios);
-                cmdCancelar_Click(sender, e);
-                MessageBox.Show("Socio creado", "Creación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bool bandera = socios.NuevoSocio(txtApellido.Text, txtNombre.Text, txtDireccion.Text, txtDni.Text, dtpFecha.Value.ToString("MM/dd/yyyy"), txtTelefono.Text, txtResponsable.Text);
+                if (bandera)
+                {
+                    llenarGrilla(socios.ConsultarSocio(), dgvSocios);
+                    cmdCancelar_Click(sender, e);
+                    MessageBox.Show("Socio creado", "Creación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Algo salio mal...", "Creación fallo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cmdCancelar_Click(sender, e);
+                }
             }
         }
 

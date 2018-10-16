@@ -69,10 +69,18 @@ namespace ProyectoBOCHAS
                 if(MessageBox.Show("¿Seguro desea modificar al socio '" + dgvSocios.CurrentRow.Cells[1].Value.ToString() +" "+ dgvSocios.CurrentRow.Cells[2].Value.ToString() + "'?", "Confirmación de modificación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     int id = Int32.Parse(dgvSocios.CurrentRow.Cells[0].Value.ToString());
-                    socios.ModificarSocio(id, txtApellidoNuevo.Text, txtNombreNuevo.Text, txtDireccion.Text, txtTelefono.Text, txtResponsable.Text);
-                    MessageBox.Show("Socio modificado", "Modificación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cmdBuscar_Click(sender, e);
-                    cmdCancelar_Click(sender, e);
+                    bool bandera = socios.ModificarSocio(id, txtApellidoNuevo.Text, txtNombreNuevo.Text, txtDireccion.Text, txtTelefono.Text, txtResponsable.Text);
+                    if (bandera)
+                    {
+                        MessageBox.Show("Socio modificado", "Modificación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        cmdBuscar_Click(sender, e);
+                        cmdCancelar_Click(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Algo salio mal...", "Modificación fallo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        cmdCancelar_Click(sender, e);
+                    }
                 }
             }
         }
@@ -88,10 +96,18 @@ namespace ProyectoBOCHAS
                 if (MessageBox.Show("¿Seguro desea eliminar al socio '" + dgvSocios.CurrentRow.Cells[1].Value.ToString() + " " + dgvSocios.CurrentRow.Cells[2].Value.ToString() + "'?", "Confirmación de eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     int id = Int32.Parse(dgvSocios.CurrentRow.Cells[0].Value.ToString());
-                    socios.EliminarSocio(id);
-                    MessageBox.Show("Socio eliminado", "Eliminación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cmdBuscar_Click(sender, e);
-                    cmdCancelar_Click(sender, e);
+                    bool bandera = socios.EliminarSocio(id);
+                    if (bandera)
+                    {
+                        MessageBox.Show("Socio eliminado", "Eliminación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        cmdBuscar_Click(sender, e);
+                        cmdCancelar_Click(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Algo salio mal...", "Eliminación fallo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        cmdCancelar_Click(sender, e);
+                    }
                 }
             }
         }

@@ -25,7 +25,7 @@ namespace ProyectoBOCHAS
             return tabla;
         }
 
-        public void NuevoSocio(string apellido, string nombre, string direccion, string dni, string fecha, string telefono, string responsable)
+        public bool NuevoSocio(string apellido, string nombre, string direccion, string dni, string fecha, string telefono, string responsable)
         {
             SqlCommand comando = new SqlCommand("insert into Socios (nombre, apellido, direccion, dni, fechaNacimiento, estado) values (@nombre, @apellido, @direccion, @dni, @fecha, 'S')");
             comando.Parameters.AddWithValue("@nombre", nombre);
@@ -44,7 +44,8 @@ namespace ProyectoBOCHAS
             comando.Parameters.AddWithValue("@telefono", telefono);
             comando.Parameters.AddWithValue("@responsable", responsable);
             comandos.Add(comando);
-            oDatos.TransaccionSQL(comandos);
+            bool bandera = oDatos.TransaccionSQL(comandos);
+            return bandera;
         }
 
         public DataTable BuscarSocio(string apellido, string nombre, string dni) //Busca con o sin parametros
@@ -71,7 +72,7 @@ namespace ProyectoBOCHAS
             return tabla;
         }
 
-        public void ModificarSocio(int id, string apellido, string nombre, string direccion, string telefono, string responsable)
+        public bool ModificarSocio(int id, string apellido, string nombre, string direccion, string telefono, string responsable)
         {
             SqlCommand comando = new SqlCommand("update Socios set apellido = @apellido, nombre = @nombre, direccion = @direccion where idSocio = @id");
             comando.Parameters.AddWithValue("@apellido", apellido);
@@ -85,7 +86,8 @@ namespace ProyectoBOCHAS
             comando.Parameters.AddWithValue("@responsable", responsable);
             comando.Parameters.AddWithValue("@id", id);
             comandos.Add(comando);
-            oDatos.TransaccionSQL(comandos);
+            bool bandera = oDatos.TransaccionSQL(comandos);
+            return bandera;
         }
 
         public void AgregarTelefono(int id, string telefono, string responsable)
@@ -97,7 +99,7 @@ namespace ProyectoBOCHAS
             oDatos.ComandoSQL(comando);
         }
 
-        public void EliminarSocio(int id)
+        public bool EliminarSocio(int id)
         {
             SqlCommand comando = new SqlCommand("update socios set estado = 'N' where idSocio = @id");
             comando.Parameters.AddWithValue("@id", id);
@@ -106,7 +108,8 @@ namespace ProyectoBOCHAS
             comando = new SqlCommand("update TelefonosXSocios set estado = 'N' where idSocio = @id");
             comando.Parameters.AddWithValue("@id", id);
             comandos.Add(comando);
-            oDatos.TransaccionSQL(comandos);
+            bool bandera = oDatos.TransaccionSQL(comandos);
+            return bandera;
         }
 
         public void EliminarTelefono(int id, string telefono)
