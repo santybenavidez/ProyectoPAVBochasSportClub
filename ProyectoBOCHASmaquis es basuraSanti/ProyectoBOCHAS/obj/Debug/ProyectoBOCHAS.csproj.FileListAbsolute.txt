@@ -1,0 +1,113 @@
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.pdb
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csprojResolveAssemblyReference.cache
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionADisciplina.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmProductos.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmTipoProducto.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCategorias.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmDisciplinas.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmBecas.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmModSocios.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.GUI.frmModUser.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmSocios.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmUsuario.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmPrincipal.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.Cache
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionBeca.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.pdb
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csprojResolveAssemblyReference.cache
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionADisciplina.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionBeca.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmProductos.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmTipoProducto.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCategorias.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmDisciplinas.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmBecas.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmModSocios.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.GUI.frmModUser.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmSocios.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmUsuario.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmPrincipal.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.cache
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+D:\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+D:\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe
+D:\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.pdb
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csprojResolveAssemblyReference.cache
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibo.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionADisciplina.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionBeca.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmProductos.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmTipoProducto.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCategorias.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmDisciplinas.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmBecas.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmModSocios.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.GUI.frmModUser.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmSocios.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmUsuario.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmPrincipal.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
+D:\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.Cache
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.pdb
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csprojResolveAssemblyReference.cache
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibo.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionADisciplina.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionBeca.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmProductos.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmTipoProducto.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCategorias.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmDisciplinas.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmBecas.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmModSocios.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.GUI.frmModUser.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmSocios.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmUsuario.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmPrincipal.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
+D:\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.Cache
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csprojResolveAssemblyReference.cache
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaSocial.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibo.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionADisciplina.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionBeca.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmProductos.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmTipoProducto.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCategorias.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmDisciplinas.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmBecas.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmModSocios.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.GUI.frmModUser.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmSocios.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmUsuario.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmPrincipal.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.Cache
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe
+D:\ProyectoPAVBochasSportClub-master\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.pdb
+D:\ProyectoPAVBochasSportClub-SANTI MASTER\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+D:\ProyectoPAVBochasSportClub-SANTI MASTER\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+D:\ProyectoPAVBochasSportClub-SANTI MASTER\ProyectoPAVBochasSportClub-master\ProyectoBOCHASmaquis es basura\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
