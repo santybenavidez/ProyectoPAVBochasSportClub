@@ -57,11 +57,13 @@ namespace ProyectoBOCHAS
             return tabla;
         }
 
-        public void encabezadoInscripcionADisciplina(string monto, string descripcion)
+        public void encabezadoInscripcionADisciplina(string monto, string descripcion, string nombreCliente, string domicilioCliente)
         {
-            SqlCommand comando = new SqlCommand("INSERT INTO Recibo (fechaRecibo, montoPagado, descripcion) VALUES (GETDATE(), @monto, @descripcion)");
+            SqlCommand comando = new SqlCommand("INSERT INTO Recibo (fechaRecibo, montoPagado, descripcion, nombreCliente, domicilioCliente) VALUES (GETDATE(), @monto, @descripcion, @nombreCliente, @domiciliocliente)");
             comando.Parameters.AddWithValue("@monto", monto);
             comando.Parameters.AddWithValue("@descripcion", descripcion);
+            comando.Parameters.AddWithValue("@nombreCliente", nombreCliente);
+            comando.Parameters.AddWithValue("@domicilioCliente", domicilioCliente);
             lista.Add(comando);
         }
 
@@ -97,6 +99,15 @@ namespace ProyectoBOCHAS
             bool bandera = oDatos.TransaccionSQL(lista);
             lista = new List<SqlCommand>();
             return bandera;
+        }
+
+        public string nroRecibo()
+        {
+            DataTable tabla = new DataTable();
+            SqlCommand comando = new SqlCommand("select ident_current('recibo')");
+            tabla = oDatos.ConsultaSQL(comando);
+            string numero = tabla.Rows[0][0].ToString();
+            return numero;
         }
     } 
     

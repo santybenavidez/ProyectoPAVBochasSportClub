@@ -70,34 +70,44 @@ namespace ProyectoBOCHAS
             txtNroSocio.Text = string.Empty;
             dgvInscripcionBecas.Rows.Clear();
             dgvInscripcionBecas.Refresh();
+            txtCliente.Text = string.Empty;
+            txtDomicilio.Text = string.Empty;
         }
 
         private void btnRecibo_Click(object sender, EventArgs e)
         {
             if (dgvInscripcionBecas.Rows.Count > 0)
             {
-                transaccion.EncabezadoInscripcionBeca();
-                for (int i = 0; i < dgvInscripcionBecas.Rows.Count; i++)
-                {
-                    int idBeca = Convert.ToInt32(dgvInscripcionBecas.Rows[i].Cells[2].Value.ToString());
-                    int idSocio = Convert.ToInt32(dgvInscripcionBecas.Rows[i].Cells[0].Value.ToString());
-                    string fechaInicio = dgvInscripcionBecas.Rows[i].Cells[4].Value.ToString(); 
-                    string[] formats = { "d/M/yyyy" };
-                    fechaInicio = DateTime.ParseExact(fechaInicio, formats, new System.Globalization.CultureInfo("en-US"), DateTimeStyles.None).ToString("MM/dd/yyyy");
-                    string fechaFin = dgvInscripcionBecas.Rows[i].Cells[5].Value.ToString();
-                    fechaFin = DateTime.ParseExact(fechaFin, formats, new System.Globalization.CultureInfo("en-US"), DateTimeStyles.None).ToString("MM/dd/yyyy");
-                    transaccion.DetalleInscripcionBeca(idBeca, idSocio, fechaInicio, fechaFin);
-                }
-                bool bandera = transaccion.realizarTransaccion();
-                if (bandera)
-                {
-                    MessageBox.Show("El/Los socio/s fue asociado a la beca", "Asociación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnLimpiarCampos_Click(sender, e);
-                }
+                if (txtCliente.Text == string.Empty || txtDomicilio.Text == string.Empty)
+                    MessageBox.Show("Debe cargar la informacio del cliente", "Validación de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 else
                 {
-                    MessageBox.Show("Algo salio mal", "Asociación fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    btnLimpiarCampos_Click(sender, e);
+                    string nroRecibo = transaccion.EncabezadoInscripcionBeca(txtCliente.Text, txtDomicilio.Text);
+                    for (int i = 0; i < dgvInscripcionBecas.Rows.Count; i++)
+                    {
+                        int idBeca = Convert.ToInt32(dgvInscripcionBecas.Rows[i].Cells[2].Value.ToString());
+                        int idSocio = Convert.ToInt32(dgvInscripcionBecas.Rows[i].Cells[0].Value.ToString());
+                        string fechaInicio = dgvInscripcionBecas.Rows[i].Cells[4].Value.ToString();
+                        string[] formats = { "d/M/yyyy" };
+                        fechaInicio = DateTime.ParseExact(fechaInicio, formats, new System.Globalization.CultureInfo("en-US"), DateTimeStyles.None).ToString("MM/dd/yyyy");
+                        string fechaFin = dgvInscripcionBecas.Rows[i].Cells[5].Value.ToString();
+                        fechaFin = DateTime.ParseExact(fechaFin, formats, new System.Globalization.CultureInfo("en-US"), DateTimeStyles.None).ToString("MM/dd/yyyy");
+                        transaccion.DetalleInscripcionBeca(idBeca, idSocio, fechaInicio, fechaFin);
+                    }
+                    bool bandera = transaccion.realizarTransaccion();
+                    if (bandera)
+                    {
+                        MessageBox.Show("El/Los socio/s fue asociado a la beca", "Asociación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        DataTable tabla = validadores.GetDataTableFromDGV(dgvInscripcionBecas);
+                        frmRecibo frmRecibo = new frmRecibo(txtCliente.Text, txtDomicilio.Text, nroRecibo, tabla);
+                        frmRecibo.ShowDialog();
+                        btnLimpiarCampos_Click(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Algo salio mal", "Asociación fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        btnLimpiarCampos_Click(sender, e);
+                    }
                 }
             }
             else

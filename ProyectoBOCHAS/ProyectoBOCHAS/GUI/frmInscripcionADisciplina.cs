@@ -85,6 +85,8 @@ namespace ProyectoBOCHAS
             txtNroSocio.Text = string.Empty;
             dgvInscripcionSocioADisciplina.Rows.Clear();
             dgvInscripcionSocioADisciplina.Refresh();
+            txtCliente.Text = string.Empty;
+            txtDomicilio.Text = string.Empty; 
         }
 
         private void btnAñadir_Click(object sender, EventArgs e)
@@ -120,7 +122,7 @@ namespace ProyectoBOCHAS
         {
             if (dgvInscripcionSocioADisciplina.Rows.Count > 0)
             {
-                transaccion.encabezadoInscripcionADisciplina(txtTotal.Text, "Inscripcion");
+                transaccion.encabezadoInscripcionADisciplina(txtTotal.Text, "Inscripcion", txtCliente.Text, txtDomicilio.Text);
                 for (int i = 0; i < dgvInscripcionSocioADisciplina.Rows.Count; i++)
                 {
                     DataTable tabla1 = new DataTable();
@@ -136,7 +138,11 @@ namespace ProyectoBOCHAS
                 if (bandera)
                 {
                     MessageBox.Show("La inscripción se realizo", "Inscripción exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string nroRecibo = transaccion.nroRecibo();
+                    DataTable tabla = validadores.GetDataTableFromDGV(dgvInscripcionSocioADisciplina);
+                    frmRecibo frmRecibo = new frmRecibo(txtCliente.Text, txtDomicilio.Text, nroRecibo, tabla);
                     btnLimpiarCampos_Click(sender, e);
+                    frmRecibo.ShowDialog();
                 }
                 else
                 {

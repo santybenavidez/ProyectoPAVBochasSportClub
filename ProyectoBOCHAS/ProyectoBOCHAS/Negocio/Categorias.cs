@@ -33,7 +33,7 @@ namespace ProyectoBOCHAS
 
          public void añadirCategoria(string nombre, string edadDesde, string edadHasta, string idDisciplina, string precioInscripcion, string precioCuota)
          {
-            SqlCommand sql = new SqlCommand("USE BDBochas Insert into Categorias(idDisciplina, precioCuota, precioInscripcion, nombre, edadDesde, edadHasta, estado) values (@idDisc, @precioCuo, @precioIns, @nombre, @edadDesde, @edadHasta, 'S')");
+            SqlCommand sql = new SqlCommand("Insert into Categorias(idDisciplina, precioCuota, precioInscripcion, nombre, edadDesde, edadHasta, estado) values (@idDisc, @precioCuo, @precioIns, @nombre, @edadDesde, @edadHasta, 'S')");
             sql.Parameters.AddWithValue("@nombre", nombre);
             sql.Parameters.AddWithValue("@edadDesde", edadDesde);
             sql.Parameters.AddWithValue("@edadHasta", edadHasta);
@@ -45,7 +45,7 @@ namespace ProyectoBOCHAS
 
          public void modificarCategoria(int idCategoria, string nombre, string edadDesde, string edadHasta, string idDisciplina, string precioInscripcion, string precioCuota)
          {
-             SqlCommand sql = new SqlCommand("USE BDBochas Update Categorias set nombre = @nombre, edadDesde = @edadDesde, edadHasta = @edadHasta, idDisciplina = @idDisciplina, precioInscripcion = @precioInscripcion, precioCuota = @precioCuota, estado = 'S' where idCategoria = @idCategoria");
+             SqlCommand sql = new SqlCommand("Update Categorias set nombre = @nombre, edadDesde = @edadDesde, edadHasta = @edadHasta, idDisciplina = @idDisciplina, precioInscripcion = @precioInscripcion, precioCuota = @precioCuota, estado = 'S' where idCategoria = @idCategoria");
              sql.Parameters.AddWithValue("@idCategoria", idCategoria);
              sql.Parameters.AddWithValue("@nombre", nombre);
              sql.Parameters.AddWithValue("@edadDesde", edadDesde);
@@ -58,7 +58,7 @@ namespace ProyectoBOCHAS
 
          public void eliminarCategoria (int idCategoria, string idDisciplina)
          {
-             SqlCommand sql = new SqlCommand("USE BDBochas Update Categorias set estado = 'N' where idCategoria = @idCategoria and idDisciplina = @idDisciplina");
+             SqlCommand sql = new SqlCommand("Update Categorias set estado = 'N' where idCategoria = @idCategoria and idDisciplina = @idDisciplina");
              sql.Parameters.AddWithValue("@idCategoria", idCategoria);
              sql.Parameters.AddWithValue("@idDisciplina", idDisciplina);
              oDatos.ComandoSQL(sql);

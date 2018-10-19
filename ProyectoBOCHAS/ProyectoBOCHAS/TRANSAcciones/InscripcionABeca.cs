@@ -47,14 +47,17 @@ namespace ProyectoBOCHAS
             return tabla;
         }
 
-        public void EncabezadoInscripcionBeca()
+        public string EncabezadoInscripcionBeca(string nombreCliente, string domicilioCliente)
         {
-            SqlCommand comando = new SqlCommand("insert into recibo (fechaRecibo, montoPagado, descripcion) values (GETDATE(), 0, 'Comprobante Beca')");
+            SqlCommand comando = new SqlCommand("insert into recibo (fechaRecibo, montoPagado, descripcion, nombreCliente, domicilioCliente) values (GETDATE(), 0, 'Comprobante Beca', @nombreCliente, @domicilioCliente)");
+            comando.Parameters.AddWithValue("@nombreCliente", nombreCliente);
+            comando.Parameters.AddWithValue("@domicilioCliente", domicilioCliente);
             lista.Add(comando);
             comando = new SqlCommand("select IDENT_CURRENT('recibo')+1"); //VERDADERA magia que trae el identity para no romper todo
             DataTable tabla = new DataTable();
             tabla = oDatos.ConsultaSQL(comando);
             nroRecibo = tabla.Rows[0][0].ToString(); //nro de recibo que va a tener el insert despues de ejecutar
+            return nroRecibo;
         }
 
         public void DetalleInscripcionBeca(int idBeca, int idSocio, string fechaInicio, string fechaFin)

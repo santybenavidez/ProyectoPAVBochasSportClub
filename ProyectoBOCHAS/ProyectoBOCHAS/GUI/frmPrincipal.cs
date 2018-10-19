@@ -84,5 +84,11 @@ namespace ProyectoBOCHAS
             frmInscripcionBeca pantallaInscripcionBeca = new frmInscripcionBeca();
             pantallaInscripcionBeca.ShowDialog();
         }
+
+        private void cobroDeCuotasSocialesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCobroCuotaSocial pantallaCobroCuotaSocial = new frmCobroCuotaSocial();
+            pantallaCobroCuotaSocial.ShowDialog();
+        }
     }
 }

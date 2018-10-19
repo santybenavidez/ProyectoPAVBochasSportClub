@@ -24,6 +24,7 @@ namespace ProyectoBOCHAS
             cadenaConexion = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=BDBochas;User ID=sa;password=1234";
             //Data Source=USUARIO-3WU9RFG\SQLEXPRESS;Initial Catalog=BDBochas;Integrated Security=True
             //@"Data Source=localhost\SQLEXPRESS;Initial Catalog=BDBochas;User ID=sa;password=1234"
+            //"Data Source=maquis;Initial Catalog=73280Bochas;User ID=avisuales1;password=avisuales1"
             conexion = new SqlConnection(cadenaConexion);
             comando = new SqlCommand();
         }

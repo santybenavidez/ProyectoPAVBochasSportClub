@@ -44,6 +44,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuotaSocial.cs" />
+    <Compile Include="GUI\frmCobroCuotaSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmCobroCuotaSocial.designer.cs">
+      <DependentUpon>frmCobroCuotaSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmRecibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmRecibo.Designer.cs">
+      <DependentUpon>frmRecibo.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmInscripcionBeca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +81,7 @@
     <Compile Include="GUI\frmTipoProducto.designer.cs">
       <DependentUpon>frmTipoProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocio\Recibo.cs" />
     <Compile Include="TRANSAcciones\InscripcionABeca.cs" />
     <Compile Include="Negocio\Categorias.cs" />
     <Compile Include="Negocio\Disciplinas.cs" />
@@ -135,6 +149,12 @@
     <Compile Include="Negocio\TiposProductos.cs" />
     <Compile Include="TRANSAcciones\transaccionInscripcionADisciplina.cs" />
     <Compile Include="Validadores\Validadores.cs" />
+    <EmbeddedResource Include="GUI\frmCobroCuotaSocial.resx">
+      <DependentUpon>frmCobroCuotaSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmRecibo.resx">
+      <DependentUpon>frmRecibo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmInscripcionADisciplina.resx">
       <DependentUpon>frmInscripcionADisciplina.cs</DependentUpon>
     </EmbeddedResource>
