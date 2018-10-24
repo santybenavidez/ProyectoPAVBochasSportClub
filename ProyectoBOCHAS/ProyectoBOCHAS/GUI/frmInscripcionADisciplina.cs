@@ -128,9 +128,9 @@ namespace ProyectoBOCHAS
                     DataTable tabla1 = new DataTable();
                     DataTable tabla2 = new DataTable();
                     tabla1 = transaccion.buscarIdDisciplina(dgvInscripcionSocioADisciplina.Rows[i].Cells["disciplina"].Value.ToString());
-                    tabla2 = transaccion.buscarIdCategoria(dgvInscripcionSocioADisciplina.Rows[i].Cells["categoria"].Value.ToString());
                     int idSocio = Convert.ToInt32(dgvInscripcionSocioADisciplina.Rows[i].Cells["idSocio"].Value.ToString());
                     int idDisciplina = Convert.ToInt32(tabla1.Rows[0][0]);
+                    tabla2 = transaccion.buscarIdCategoria(dgvInscripcionSocioADisciplina.Rows[i].Cells["categoria"].Value.ToString(), idDisciplina);
                     int idCategoria = Convert.ToInt32(tabla2.Rows[0][0]);
                     transaccion.detalleInscripcionADisciplina(idSocio, idDisciplina, idCategoria);
                 }

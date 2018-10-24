@@ -85,11 +85,12 @@ namespace ProyectoBOCHAS
             return tabla;
         }
 
-        public DataTable buscarIdCategoria(string nombreCategoria)
+        public DataTable buscarIdCategoria(string nombreCategoria, int idDisciplina)
         {
             DataTable tabla = new DataTable();
-            SqlCommand comando = new SqlCommand("SELECT C.idCategoria FROM categorias C WHERE C.nombre = @nombreCategoria");
+            SqlCommand comando = new SqlCommand("SELECT C.idCategoria FROM categorias C WHERE C.nombre = @nombreCategoria and c.idDisciplina = @idDisciplina");
             comando.Parameters.AddWithValue("@nombreCategoria", nombreCategoria);
+            comando.Parameters.AddWithValue("@idDisciplina", idDisciplina);
             tabla = oDatos.ConsultaSQL(comando);
             return tabla;
         }

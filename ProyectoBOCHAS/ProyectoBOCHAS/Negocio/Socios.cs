@@ -27,7 +27,7 @@ namespace ProyectoBOCHAS
 
         public bool NuevoSocio(string apellido, string nombre, string direccion, string dni, string fecha, string telefono, string responsable)
         {
-            SqlCommand comando = new SqlCommand("insert into Socios (nombre, apellido, direccion, dni, fechaNacimiento, estado) values (@nombre, @apellido, @direccion, @dni, '1/1/2001', 'S')");
+            SqlCommand comando = new SqlCommand("insert into Socios (nombre, apellido, direccion, dni, fechaNacimiento, estado) values (@nombre, @apellido, @direccion, @dni, @fecha, 'S')");
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@apellido", apellido);
             comando.Parameters.AddWithValue("@direccion", direccion);

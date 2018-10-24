@@ -109,3 +109,5 @@ C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSport
 C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS STACKOVERFLOW ESLA LUUUUZ\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.CoreCompileInputs.cache
 C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS STACKOVERFLOW ESLA LUUUUZ\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
 C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS STACKOVERFLOW ESLA LUUUUZ\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaSocial.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibo.resources
