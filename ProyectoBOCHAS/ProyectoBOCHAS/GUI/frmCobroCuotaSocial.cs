@@ -44,5 +44,97 @@ namespace ProyectoBOCHAS
                     MessageBox.Show("No existe ningun socio con este numero.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnAñadir_Click(object sender, EventArgs e)
+        {
+            if (validarCamposForm())
+            {
+                dgvDetalle.Rows.Add(txtCliente.Text, txtDomicilio.Text, txtNroSocio.Text, txtNombreSocio.Text, cmbMes.Text);
+                txtTotal.Text = Convert.ToString(calcularTotal());
+            }
+                
+        }
+
+        private bool validarCamposForm()
+        {
+            if (txtCliente.Text == string.Empty || txtDomicilio.Text == string.Empty)
+            {
+                MessageBox.Show("Debe ingresar el nombre y/o domicilio de la persona que efectua el pago.", "Datos faltantes", MessageBoxButtons.OK);
+                txtCliente.Focus();
+                return false;
+            }
+            else
+            {
+                if (txtNombreSocio.Text == string.Empty)
+                {
+                    MessageBox.Show("Debe ingresar el numero de socio para poder obtener el nombre de socio", "Falta ingreso de socio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtNombreSocio.Focus();
+                    return false;
+                }
+                else
+                    return true;
+            }
+        }
+
+        private int calcularTotal()
+        {
+            int total = 0;
+            for (int i = 0; i <= dgvDetalle.Rows.Count; i++)
+                total = 150 * (i + 1);
+            return total;
+
+        }
+
+        private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            txtCliente.Text = string.Empty;
+            txtDomicilio.Text = string.Empty;
+            txtNroSocio.Text = string.Empty;
+            txtTotal.Text = string.Empty;
+        }
+
+        private void btnRecibo_Click(object sender, EventArgs e)
+        {
+            if (dgvDetalle.Rows.Count > 1)
+            {
+               int nroSocio = Convert.ToInt32(txtNroSocio.Text);
+               int totalRecibo = Convert.ToInt32(txtTotal.Text);
+               transaccion.EncabezadoCuotaSocial(nroSocio,txtCliente.Text, txtDomicilio.Text,totalRecibo);
+
+               for (int i = 0; i < dgvDetalle.Rows.Count; i++)
+               {
+                   int idSocio = Convert.ToInt32(dgvDetalle.Rows[i].Cells["idSocio"].Value.ToString());
+                   string mes = Convert.ToString(dgvDetalle.Rows[i].Cells["mesQueCorresponde"].Value.ToString());
+                   transaccion.DetalleCuotaSocial(idSocio, mes);
+               }
+
+                bool bandera = transaccion.realizarTransaccion();
+                if (bandera)
+                {
+                    MessageBox.Show("La inscripción se realizo", "Inscripción exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string nroRecibo = transaccion.numRecibo();
+                    DataTable tabla = validadores.GetDataTableFromDGV(dgvDetalle);
+                    frmRecibo frmRecibo = new frmRecibo(txtCliente.Text, txtDomicilio.Text, nroRecibo, tabla);
+                    btnLimpiarCampos_Click(sender, e);
+                    frmRecibo.ShowDialog();
+                }
+           
+                else
+                {
+                    MessageBox.Show("Algo salio mal...", "Inscripción fallo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    btnLimpiarCampos_Click(sender, e);
+                }
+            }
+           
+            else
+                MessageBox.Show("No cargo ningun pago", "Validación de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+        }
+                
+                
+                
     }
-}
+
+ }
+

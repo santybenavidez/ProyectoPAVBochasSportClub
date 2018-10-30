@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CuotaSocial.cs" />
+    <Compile Include="TRANSAcciones\CuotaSocial.cs" />
     <Compile Include="GUI\frmCobroCuotaSocial.cs">
       <SubType>Form</SubType>
     </Compile>

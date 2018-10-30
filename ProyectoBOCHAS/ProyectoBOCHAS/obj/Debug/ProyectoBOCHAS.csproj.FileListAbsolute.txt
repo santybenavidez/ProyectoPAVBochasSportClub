@@ -111,3 +111,26 @@ C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSport
 C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS STACKOVERFLOW ESLA LUUUUZ\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
 C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaSocial.resources
 C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibo.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.pdb
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csprojResolveAssemblyReference.cache
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaSocial.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibo.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionADisciplina.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionBeca.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmProductos.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmTipoProducto.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCategorias.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmDisciplinas.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmBecas.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmModSocios.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.GUI.frmModUser.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmSocios.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmUsuario.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmPrincipal.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
+D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.Cache

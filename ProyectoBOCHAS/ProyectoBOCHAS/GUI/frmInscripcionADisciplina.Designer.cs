@@ -40,6 +40,11 @@
             this.cmbDisciplinas = new System.Windows.Forms.ComboBox();
             this.btnAñadir = new System.Windows.Forms.Button();
             this.dgvInscripcionSocioADisciplina = new System.Windows.Forms.DataGridView();
+            this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.disciplina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioInscripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRecibo = new System.Windows.Forms.Button();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -51,11 +56,6 @@
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.lblDom = new System.Windows.Forms.Label();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
-            this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.disciplina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precioInscripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInscripcionSocioADisciplina)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,6 +168,32 @@
             this.dgvInscripcionSocioADisciplina.Size = new System.Drawing.Size(615, 148);
             this.dgvInscripcionSocioADisciplina.TabIndex = 12;
             // 
+            // idSocio
+            // 
+            this.idSocio.HeaderText = "Numero Socio";
+            this.idSocio.Name = "idSocio";
+            this.idSocio.Width = 50;
+            // 
+            // nomSocio
+            // 
+            this.nomSocio.HeaderText = "Nombre Socio";
+            this.nomSocio.Name = "nomSocio";
+            // 
+            // disciplina
+            // 
+            this.disciplina.HeaderText = "Disciplina";
+            this.disciplina.Name = "disciplina";
+            // 
+            // categoria
+            // 
+            this.categoria.HeaderText = "Categoria";
+            this.categoria.Name = "categoria";
+            // 
+            // precioInscripcion
+            // 
+            this.precioInscripcion.HeaderText = "Precio Inscripcion";
+            this.precioInscripcion.Name = "precioInscripcion";
+            // 
             // btnRecibo
             // 
             this.btnRecibo.Location = new System.Drawing.Point(560, 118);
@@ -261,32 +287,6 @@
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(288, 20);
             this.txtDomicilio.TabIndex = 23;
-            // 
-            // idSocio
-            // 
-            this.idSocio.HeaderText = "Numero Socio";
-            this.idSocio.Name = "idSocio";
-            this.idSocio.Width = 50;
-            // 
-            // nomSocio
-            // 
-            this.nomSocio.HeaderText = "Nombre Socio";
-            this.nomSocio.Name = "nomSocio";
-            // 
-            // disciplina
-            // 
-            this.disciplina.HeaderText = "Disciplina";
-            this.disciplina.Name = "disciplina";
-            // 
-            // categoria
-            // 
-            this.categoria.HeaderText = "Categoria";
-            this.categoria.Name = "categoria";
-            // 
-            // precioInscripcion
-            // 
-            this.precioInscripcion.HeaderText = "Precio Inscripcion";
-            this.precioInscripcion.Name = "precioInscripcion";
             // 
             // frmInscripcionADisciplina
             // 
