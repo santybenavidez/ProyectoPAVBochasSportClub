@@ -154,6 +154,7 @@
             this.cobroDeCuotasDisciplinasToolStripMenuItem.Name = "cobroDeCuotasDisciplinasToolStripMenuItem";
             this.cobroDeCuotasDisciplinasToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.cobroDeCuotasDisciplinasToolStripMenuItem.Text = "Cobro de cuotas disciplinas";
+            this.cobroDeCuotasDisciplinasToolStripMenuItem.Click += new System.EventHandler(this.cobroDeCuotasDisciplinasToolStripMenuItem_Click);
             // 
             // cobroDeIndumentariaToolStripMenuItem
             // 

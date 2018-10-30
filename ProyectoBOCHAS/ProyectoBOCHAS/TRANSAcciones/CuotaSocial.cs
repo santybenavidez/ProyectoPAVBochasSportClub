@@ -49,7 +49,7 @@ namespace ProyectoBOCHAS
 
         public void DetalleCuotaSocial(int nroSocio, string mes)
         {
-            SqlCommand comando = new SqlCommand("INSERT INTO CuotaSocial(idRecibo, idSocio, mes) VALUES (@nroRecibo, @nroSocio, @mes)");
+            SqlCommand comando = new SqlCommand("INSERT INTO CuotaSocial(nroRecibo, idSocio, mes) VALUES (@nroRecibo, @nroSocio, @mes)");
             comando.Parameters.AddWithValue("@nroSocio", nroSocio);
             comando.Parameters.AddWithValue("@nroRecibo", nroRecibo);
             comando.Parameters.AddWithValue("@mes", mes);

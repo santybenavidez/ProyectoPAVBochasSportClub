@@ -134,3 +134,4 @@ D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\Pro
 D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
 D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
 D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.Cache
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaDisciplina.resources

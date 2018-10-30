@@ -90,5 +90,11 @@ namespace ProyectoBOCHAS
             frmCobroCuotaSocial pantallaCobroCuotaSocial = new frmCobroCuotaSocial();
             pantallaCobroCuotaSocial.ShowDialog();
         }
+
+        private void cobroDeCuotasDisciplinasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCobroCuotaDisciplina pantallaCuotaDisciplina = new frmCobroCuotaDisciplina();
+            pantallaCuotaDisciplina.ShowDialog();
+        }
     }
 }

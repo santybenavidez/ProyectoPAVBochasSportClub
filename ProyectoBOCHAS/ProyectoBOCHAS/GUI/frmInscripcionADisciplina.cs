@@ -100,7 +100,7 @@ namespace ProyectoBOCHAS
             }
         }
 
-        private double calculartotal() //calcula el total que creo termina yendo al recibo HAY QUE VER SI HACE FALTA DETALLE RECIBO, ME PA QUE SI (lucas)
+        private double calculartotal() //calcula el total que creo termina yendo al recibo
         {
             double total = 0;
             for (int i = 0; i < dgvInscripcionSocioADisciplina.Rows.Count; i++)

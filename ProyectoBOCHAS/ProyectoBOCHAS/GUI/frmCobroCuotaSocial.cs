@@ -80,7 +80,7 @@ namespace ProyectoBOCHAS
         {
             int total = 0;
             for (int i = 0; i <= dgvDetalle.Rows.Count; i++)
-                total = 150 * (i + 1);
+                total = 150 * (i);
             return total;
 
         }
@@ -90,12 +90,14 @@ namespace ProyectoBOCHAS
             txtCliente.Text = string.Empty;
             txtDomicilio.Text = string.Empty;
             txtNroSocio.Text = string.Empty;
+            txtNombreSocio.Text = string.Empty;
             txtTotal.Text = string.Empty;
+            dgvDetalle.Rows.Clear();
         }
 
         private void btnRecibo_Click(object sender, EventArgs e)
         {
-            if (dgvDetalle.Rows.Count > 1)
+            if (dgvDetalle.Rows.Count > 0)
             {
                int nroSocio = Convert.ToInt32(txtNroSocio.Text);
                int totalRecibo = Convert.ToInt32(txtTotal.Text);
@@ -125,16 +127,9 @@ namespace ProyectoBOCHAS
                     btnLimpiarCampos_Click(sender, e);
                 }
             }
-           
             else
                 MessageBox.Show("No cargo ningun pago", "Validación de entrada", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-
-        }
-                
-                
-                
+        }        
     }
-
  }
 
