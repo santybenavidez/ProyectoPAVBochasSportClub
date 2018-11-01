@@ -135,3 +135,29 @@ D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\Pro
 D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
 D:\Usuario Principal\Desktop\Cosas Facultad\PAV I\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.Cache
 C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaDisciplina.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe.config
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.exe
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\bin\Debug\ProyectoBOCHAS.pdb
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csprojAssemblyReference.cache
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaDisciplina.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCobroCuotaSocial.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibo.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionADisciplina.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmInscripcionBeca.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmProductos.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmTipoProducto.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmCategorias.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmDisciplinas.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmBecas.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmModSocios.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.GUI.frmModUser.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmSocios.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmUsuario.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmPrincipal.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmLogin.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.Properties.Resources.resources
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.GenerateResource.cache
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.CoreCompileInputs.cache
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
+C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmVentaProductos.resources

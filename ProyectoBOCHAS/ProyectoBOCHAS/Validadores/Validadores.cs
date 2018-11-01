@@ -60,5 +60,14 @@ namespace ProyectoBOCHAS
 
             return dt;
         }
+
+        public bool validarNoVacio(TextBox textbox, Label etiqueta) {//valida que no este vacio un textbox
+            if (textbox.Text == string.Empty)
+            {
+                MessageBox.Show("El campo " + etiqueta.Text + " está vacío.", "Validacion de entrada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            else return true;
+        }
     }
 }

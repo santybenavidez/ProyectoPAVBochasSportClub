@@ -13,6 +13,7 @@ namespace ProyectoBOCHAS
         DBHelper oDatos;
         List<SqlCommand> lista = new List<SqlCommand>();
         string numero;
+
         public CuotaDisciplina()
         {
             oDatos = new DBHelper();
@@ -84,6 +85,7 @@ namespace ProyectoBOCHAS
             }
             return bandera;
         }
+
         public string nroRecibo()
         {
             DataTable tabla = new DataTable();

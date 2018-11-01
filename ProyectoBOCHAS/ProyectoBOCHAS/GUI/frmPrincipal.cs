@@ -96,5 +96,11 @@ namespace ProyectoBOCHAS
             frmCobroCuotaDisciplina pantallaCuotaDisciplina = new frmCobroCuotaDisciplina();
             pantallaCuotaDisciplina.ShowDialog();
         }
+
+        private void cobroDeIndumentariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVentaProductos frmVentaProductos = new frmVentaProductos();
+            frmVentaProductos.Show();
+        }
     }
 }

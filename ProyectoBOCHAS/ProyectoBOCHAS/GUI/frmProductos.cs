@@ -20,6 +20,8 @@ namespace ProyectoBOCHAS
         {
             InitializeComponent();
             llenarGrilla(producto.consultarProductos(), dgvProductos);
+            llenarCombo(cbxTipo, tipos.consultarTiposProducto(), "n", "nombre");
+
         }
 
         private void llenarGrilla(DataTable tabla, DataGridView grilla)
@@ -99,6 +101,11 @@ namespace ProyectoBOCHAS
                 llenarGrilla(producto.consultarProductos(), dgvProductos);
                 MessageBox.Show("Producto modificado", "Modificacion exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void cbxTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
