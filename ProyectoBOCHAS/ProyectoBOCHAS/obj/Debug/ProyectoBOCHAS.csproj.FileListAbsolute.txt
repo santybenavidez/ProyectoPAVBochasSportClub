@@ -161,3 +161,4 @@ C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\Proyec
 C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.exe
 C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.pdb
 C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmVentaProductos.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmVentaProductos.resources

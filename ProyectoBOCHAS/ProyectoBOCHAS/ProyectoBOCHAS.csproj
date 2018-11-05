@@ -31,6 +31,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,21 +63,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="VentaProductos.cs" />
-    <Compile Include="CuotaDisciplina.cs" />
-    <Compile Include="frmCobroCuotaDisciplina.cs">
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Transacciones\VentaProductos.cs" />
+    <Compile Include="Transacciones\CuotaDisciplina.cs" />
+    <Compile Include="GUI\frmCobroCuotaDisciplina.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCobroCuotaDisciplina.Designer.cs">
+    <Compile Include="GUI\frmCobroCuotaDisciplina.Designer.cs">
       <DependentUpon>frmCobroCuotaDisciplina.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmVentaProductos.cs">
+    <Compile Include="GUI\frmVentaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVentaProductos.Designer.cs">
+    <Compile Include="GUI\frmVentaProductos.Designer.cs">
       <DependentUpon>frmVentaProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="TRANSAcciones\CuotaSocial.cs" />
+    <Compile Include="Transacciones\CuotaSocial.cs" />
     <Compile Include="GUI\frmCobroCuotaSocial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,7 +116,7 @@
       <DependentUpon>frmTipoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocio\Recibo.cs" />
-    <Compile Include="TRANSAcciones\InscripcionABeca.cs" />
+    <Compile Include="Transacciones\InscripcionABeca.cs" />
     <Compile Include="Negocio\Categorias.cs" />
     <Compile Include="Negocio\Disciplinas.cs" />
     <Compile Include="GUI\frmCategorias.cs">
@@ -161,12 +181,12 @@
     <Compile Include="Negocio\Usuarios.cs" />
     <Compile Include="Negocio\Socios.cs" />
     <Compile Include="Negocio\TiposProductos.cs" />
-    <Compile Include="TRANSAcciones\transaccionInscripcionADisciplina.cs" />
+    <Compile Include="Transacciones\transaccionInscripcionADisciplina.cs" />
     <Compile Include="Validadores\Validadores.cs" />
-    <EmbeddedResource Include="frmCobroCuotaDisciplina.resx">
+    <EmbeddedResource Include="GUI\frmCobroCuotaDisciplina.resx">
       <DependentUpon>frmCobroCuotaDisciplina.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmVentaProductos.resx">
+    <EmbeddedResource Include="GUI\frmVentaProductos.resx">
       <DependentUpon>frmVentaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCobroCuotaSocial.resx">
@@ -223,6 +243,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -236,6 +257,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
