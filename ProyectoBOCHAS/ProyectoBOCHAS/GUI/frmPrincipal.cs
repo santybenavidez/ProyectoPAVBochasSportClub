@@ -102,5 +102,11 @@ namespace ProyectoBOCHAS
             frmVentaProductos frmVentaProductos = new frmVentaProductos();
             frmVentaProductos.Show();
         }
+
+        private void listadoDeSociosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListadoDeSocios listadoSocios = new ListadoDeSocios();
+            listadoSocios.ShowDialog();
+        }
     }
 }

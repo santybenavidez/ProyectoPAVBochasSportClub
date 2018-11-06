@@ -63,6 +63,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ListadoDeSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoDeSocios.Designer.cs">
+      <DependentUpon>ListadoDeSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoSocios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListadoSocios.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Transacciones\VentaProductos.cs" />
     <Compile Include="Transacciones\CuotaDisciplina.cs" />
@@ -234,6 +245,9 @@
     <EmbeddedResource Include="GUI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListadoDeSocios.resx">
+      <DependentUpon>ListadoDeSocios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -243,6 +257,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ListadoDeSocios.rdlc" />
+    <None Include="ListadoSocios.xsc">
+      <DependentUpon>ListadoSocios.xsd</DependentUpon>
+    </None>
+    <None Include="ListadoSocios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListadoSocios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ListadoSocios.xss">
+      <DependentUpon>ListadoSocios.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
