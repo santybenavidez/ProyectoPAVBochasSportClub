@@ -103,10 +103,16 @@ namespace ProyectoBOCHAS
             frmVentaProductos.Show();
         }
 
-        private void listadoDeSociosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void porDisciplinaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListadoDeSocios listadoSocios = new ListadoDeSocios();
-            listadoSocios.ShowDialog();
+            frmSociosXDisciplinas frmGrafico = new frmSociosXDisciplinas();
+            frmGrafico.ShowDialog();
+        }
+
+        private void ventasPorTiposDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVentasXTipoProducto frmVentasxTipoProductos = new frmVentasXTipoProducto();
+            frmVentasxTipoProductos.ShowDialog();
         }
     }
 }

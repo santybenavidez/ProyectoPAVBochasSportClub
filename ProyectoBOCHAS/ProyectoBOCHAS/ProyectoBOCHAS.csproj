@@ -63,16 +63,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ListadoDeSocios.cs">
+    <Compile Include="frmVentasXTipoProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListadoDeSocios.Designer.cs">
-      <DependentUpon>ListadoDeSocios.cs</DependentUpon>
+    <Compile Include="frmVentasXTipoProducto.Designer.cs">
+      <DependentUpon>frmVentasXTipoProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListadoSocios.Designer.cs">
+    <Compile Include="Reportes\frmSociosXDisciplinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmSociosXDisciplinas.Designer.cs">
+      <DependentUpon>frmSociosXDisciplinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SociosXDisciplina.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ListadoSocios.xsd</DependentUpon>
+      <DependentUpon>SociosXDisciplina.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Transacciones\VentaProductos.cs" />
@@ -194,6 +200,13 @@
     <Compile Include="Negocio\TiposProductos.cs" />
     <Compile Include="Transacciones\transaccionInscripcionADisciplina.cs" />
     <Compile Include="Validadores\Validadores.cs" />
+    <EmbeddedResource Include="frmVentasXTipoProducto.resx">
+      <DependentUpon>frmVentasXTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepoCantidadVentasXTipoProducto.rdlc" />
+    <EmbeddedResource Include="Reportes\frmSociosXDisciplinas.resx">
+      <DependentUpon>frmSociosXDisciplinas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCobroCuotaDisciplina.resx">
       <DependentUpon>frmCobroCuotaDisciplina.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,9 +258,6 @@
     <EmbeddedResource Include="GUI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListadoDeSocios.resx">
-      <DependentUpon>ListadoDeSocios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -257,18 +267,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ListadoDeSocios.rdlc" />
-    <None Include="ListadoSocios.xsc">
-      <DependentUpon>ListadoSocios.xsd</DependentUpon>
-    </None>
-    <None Include="ListadoSocios.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ListadoSocios.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="ListadoSocios.xss">
-      <DependentUpon>ListadoSocios.xsd</DependentUpon>
-    </None>
+    <EmbeddedResource Include="RepoSociosXDisciplina.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -279,6 +278,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SociosXDisciplina.xsc">
+      <DependentUpon>SociosXDisciplina.xsd</DependentUpon>
+    </None>
+    <None Include="SociosXDisciplina.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SociosXDisciplina.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SociosXDisciplina.xss">
+      <DependentUpon>SociosXDisciplina.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -298,5 +308,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
