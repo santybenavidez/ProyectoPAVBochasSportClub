@@ -63,10 +63,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmVentasXTipoProducto.cs">
+    <Compile Include="frmListadoCompletoSocios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVentasXTipoProducto.Designer.cs">
+    <Compile Include="frmListadoCompletoSocios.Designer.cs">
+      <DependentUpon>frmListadoCompletoSocios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmVentasXTipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmVentasXTipoProducto.Designer.cs">
       <DependentUpon>frmVentasXTipoProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\frmSociosXDisciplinas.cs">
@@ -200,7 +206,10 @@
     <Compile Include="Negocio\TiposProductos.cs" />
     <Compile Include="Transacciones\transaccionInscripcionADisciplina.cs" />
     <Compile Include="Validadores\Validadores.cs" />
-    <EmbeddedResource Include="frmVentasXTipoProducto.resx">
+    <EmbeddedResource Include="frmListadoCompletoSocios.resx">
+      <DependentUpon>frmListadoCompletoSocios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmVentasXTipoProducto.resx">
       <DependentUpon>frmVentasXTipoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RepoCantidadVentasXTipoProducto.rdlc" />

@@ -21,7 +21,7 @@ namespace ProyectoBOCHAS
 
         private void frmBecas_Load(object sender, EventArgs e)
         {
-            
+            llenarGrilla(becas.ConsultarBecas(), dgvBecas);
         }
 
         private void llenarGrilla(DataTable tabla, DataGridView grilla)
@@ -36,7 +36,22 @@ namespace ProyectoBOCHAS
             }
         }
 
-        private void cmdNueva_Click(object sender, EventArgs e)
+   
+        private void Limpiar() //Deja al form deshabilitado
+        {
+         
+            txtNombre.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            
+        }
+
+        private void dgvBecas_SelectionChanged(object sender, EventArgs e)
+        {
+            txtNombre.Text = dgvBecas.CurrentRow.Cells[1].Value.ToString();
+            txtDescripcion.Text = dgvBecas.CurrentRow.Cells[2].Value.ToString();
+        }
+
+        private void agregarBecaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == string.Empty)
                 MessageBox.Show("Debe cargar el nombre de la nueva Beca", "Validación de entrada", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -49,27 +64,7 @@ namespace ProyectoBOCHAS
             }
         }
 
-        private void cmdHabilitar_Click(object sender, EventArgs e)
-        {
-            llenarGrilla(becas.ConsultarBecas(), dgvBecas);
-            txtDescripcion.Text = string.Empty;
-            txtNombre.Text = string.Empty;
-            cmdNueva.Visible = true;
-            cmdModificar.Visible = true;
-            cmdEliminar.Visible = true;
-            cmdCancelar.Visible = true;
-            txtDescripcion.Enabled = true;
-            txtNombre.Enabled = true;
-            cmdHabilitar.Visible = false;
-            txtInstrucciones.Visible = true;
-        }
-
-        private void cmdCancelar_Click(object sender, EventArgs e)
-        {
-            Limpiar();
-        }
-
-        private void cmdEliminar_Click(object sender, EventArgs e)
+        private void eliminarBecaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == string.Empty)
                 MessageBox.Show("Debe seleccionar una beca en la lista", "Validación de entrada", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -90,7 +85,7 @@ namespace ProyectoBOCHAS
             }
         }
 
-        private void cmdModificar_Click(object sender, EventArgs e)
+        private void modificarBecaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (txtNombre.Text == string.Empty)
                 MessageBox.Show("Debe seleccionar una beca en la lista", "Validación de entrada", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -109,26 +104,6 @@ namespace ProyectoBOCHAS
                     Limpiar();
                 }
             }
-        }
-        
-        private void Limpiar() //Deja al form deshabilitado
-        {
-            cmdNueva.Visible = false;
-            cmdModificar.Visible = false;
-            cmdEliminar.Visible = false;
-            cmdCancelar.Visible = false;
-            txtNombre.Text = string.Empty;
-            txtDescripcion.Text = string.Empty;
-            txtNombre.Enabled = false;
-            txtDescripcion.Enabled = false;
-            cmdHabilitar.Visible = true;
-            txtInstrucciones.Visible = false;
-        }
-
-        private void dgvBecas_SelectionChanged(object sender, EventArgs e)
-        {
-            txtNombre.Text = dgvBecas.CurrentRow.Cells[1].Value.ToString();
-            txtDescripcion.Text = dgvBecas.CurrentRow.Cells[2].Value.ToString();
         }
     }
 }
