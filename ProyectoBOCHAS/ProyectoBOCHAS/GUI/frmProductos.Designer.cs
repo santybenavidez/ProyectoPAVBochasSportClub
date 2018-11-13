@@ -128,9 +128,9 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(113, 239);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(192, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(239, 20);
             this.txtDescripcion.TabIndex = 15;
             // 
             // lblNombre
@@ -146,9 +146,9 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(113, 282);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(192, 20);
+            this.txtPrecio.Size = new System.Drawing.Size(239, 20);
             this.txtPrecio.TabIndex = 16;
             // 
             // label1
@@ -221,7 +221,7 @@
             // 
             // cmdEliminar
             // 
-            this.cmdEliminar.Location = new System.Drawing.Point(213, 334);
+            this.cmdEliminar.Location = new System.Drawing.Point(14, 396);
             this.cmdEliminar.Name = "cmdEliminar";
             this.cmdEliminar.Size = new System.Drawing.Size(142, 42);
             this.cmdEliminar.TabIndex = 23;
@@ -231,7 +231,7 @@
             // 
             // cmdModificar
             // 
-            this.cmdModificar.Location = new System.Drawing.Point(213, 396);
+            this.cmdModificar.Location = new System.Drawing.Point(210, 334);
             this.cmdModificar.Name = "cmdModificar";
             this.cmdModificar.Size = new System.Drawing.Size(142, 42);
             this.cmdModificar.TabIndex = 24;

@@ -46,12 +46,32 @@ namespace ProyectoBOCHAS
             }
         }
 
-        private void cmdNuevo_Click(object sender, EventArgs e)
+     
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) //Mostrar contraseña
         {
-            HabilitarNuevo();
+            if (checkBox1.CheckState == CheckState.Checked)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                if (checkBox1.CheckState == CheckState.Unchecked)
+                {
+                    txtPassword.PasswordChar = '*';
+                }
+            }
         }
 
-        private void cmdCargar_Click(object sender, EventArgs e)
+
+        private void cmdModUsuario_Click(object sender, EventArgs e)
+        {
+            frmModUser fr = new frmModUser();
+            fr.ShowDialog();
+            llenarGrilla(usuario.ConsultarUsuario(), dgvUsuario);
+        }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (txtPassword.Text == string.Empty || txtUsuario.Text == string.Empty)
             {
@@ -74,57 +94,20 @@ namespace ProyectoBOCHAS
                         usuario.CargarUsuario(txtUsuario.Text, txtPassword.Text);
                         llenarGrilla(usuario.ConsultarUsuario(), dgvUsuario);
                         MessageBox.Show("Usuario creado", "Creacion exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        DeshabilitarNuevo();
+                        limpiar();
                     }
                 }
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e) //Mostrar contraseña
-        {
-            if (checkBox1.CheckState == CheckState.Checked)
-            {
-                txtPassword.PasswordChar = '\0';
-            }
-            else
-            {
-                if (checkBox1.CheckState == CheckState.Unchecked)
-                {
-                    txtPassword.PasswordChar = '*';
-                }
-            }
-        }
 
-        private void cmdCancelar_Click(object sender, EventArgs e)
-        {
-            DeshabilitarNuevo();
-        }
-
-        private void DeshabilitarNuevo()
+        public void limpiar()
         {
             txtPassword.Text = string.Empty;
-            txtPassword.Enabled = false;
             txtUsuario.Text = string.Empty;
-            txtUsuario.Enabled = false;
-            checkBox1.Enabled = false;
-            cmdCancelar.Enabled = false;
-            cmdNuevo.Enabled = true;
-            cmdCargar.Enabled = false;
-            cmdModUsuario.Enabled = false;
         }
 
-        private void HabilitarNuevo()
-        {
-            txtUsuario.Enabled = true;
-            txtPassword.Enabled = true;
-            checkBox1.Enabled = true;
-            cmdCargar.Enabled = true;
-            cmdCancelar.Enabled = true;
-            cmdNuevo.Enabled = false;
-            cmdModUsuario.Enabled = true;
-        }
-
-        private void cmdModUsuario_Click(object sender, EventArgs e)
+        private void modificarUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmModUser fr = new frmModUser();
             fr.ShowDialog();

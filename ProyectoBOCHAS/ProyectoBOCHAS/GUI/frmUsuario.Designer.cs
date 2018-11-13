@@ -38,13 +38,15 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.cmdNuevo = new System.Windows.Forms.Button();
-            this.cmdCargar = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.cmdCancelar = new System.Windows.Forms.Button();
-            this.cmdModUsuario = new System.Windows.Forms.Button();
             this.lblCampoObligatorio = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvUsuario
@@ -58,13 +60,13 @@
             this.idUsuario,
             this.nombreUsuario,
             this.password});
-            this.dgvUsuario.Location = new System.Drawing.Point(593, 14);
-            this.dgvUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvUsuario.Location = new System.Drawing.Point(11, 48);
+            this.dgvUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvUsuario.Name = "dgvUsuario";
             this.dgvUsuario.ReadOnly = true;
             this.dgvUsuario.RowHeadersVisible = false;
             this.dgvUsuario.RowTemplate.Height = 24;
-            this.dgvUsuario.Size = new System.Drawing.Size(463, 158);
+            this.dgvUsuario.Size = new System.Drawing.Size(615, 128);
             this.dgvUsuario.TabIndex = 0;
             this.dgvUsuario.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvUsuario_CellFormatting);
             // 
@@ -105,132 +107,127 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(35, 21);
+            this.lblUsuario.Location = new System.Drawing.Point(11, 197);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(84, 18);
+            this.lblUsuario.Size = new System.Drawing.Size(168, 15);
             this.lblUsuario.TabIndex = 1;
-            this.lblUsuario.Text = "Usuario: (*)";
+            this.lblUsuario.Text = "Usuario: (*).................................";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(11, 70);
+            this.lblPassword.Location = new System.Drawing.Point(11, 233);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(109, 18);
+            this.lblPassword.Size = new System.Drawing.Size(194, 15);
             this.lblPassword.TabIndex = 2;
-            this.lblPassword.Text = "Contraseña: (*)";
+            this.lblPassword.Text = "Contraseña: (*)...................................";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Enabled = false;
-            this.txtUsuario.Location = new System.Drawing.Point(126, 17);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsuario.Location = new System.Drawing.Point(150, 192);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(173, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(131, 20);
             this.txtUsuario.TabIndex = 3;
             // 
             // txtPassword
             // 
-            this.txtPassword.Enabled = false;
-            this.txtPassword.Location = new System.Drawing.Point(126, 68);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPassword.Location = new System.Drawing.Point(150, 233);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(173, 22);
+            this.txtPassword.Size = new System.Drawing.Size(131, 20);
             this.txtPassword.TabIndex = 4;
-            // 
-            // cmdNuevo
-            // 
-            this.cmdNuevo.Location = new System.Drawing.Point(15, 134);
-            this.cmdNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmdNuevo.Name = "cmdNuevo";
-            this.cmdNuevo.Size = new System.Drawing.Size(135, 37);
-            this.cmdNuevo.TabIndex = 5;
-            this.cmdNuevo.Text = "Nueva acción";
-            this.cmdNuevo.UseVisualStyleBackColor = true;
-            this.cmdNuevo.Click += new System.EventHandler(this.cmdNuevo_Click);
-            // 
-            // cmdCargar
-            // 
-            this.cmdCargar.Enabled = false;
-            this.cmdCargar.Location = new System.Drawing.Point(351, 14);
-            this.cmdCargar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmdCargar.Name = "cmdCargar";
-            this.cmdCargar.Size = new System.Drawing.Size(156, 46);
-            this.cmdCargar.TabIndex = 6;
-            this.cmdCargar.Text = "Agregar usuario";
-            this.cmdCargar.UseVisualStyleBackColor = true;
-            this.cmdCargar.Click += new System.EventHandler(this.cmdCargar_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Enabled = false;
-            this.checkBox1.Location = new System.Drawing.Point(305, 70);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.checkBox1.Location = new System.Drawing.Point(316, 236);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(153, 21);
+            this.checkBox1.Size = new System.Drawing.Size(117, 17);
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Mostrar contraseña";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // cmdCancelar
-            // 
-            this.cmdCancelar.Enabled = false;
-            this.cmdCancelar.Location = new System.Drawing.Point(372, 134);
-            this.cmdCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(135, 37);
-            this.cmdCancelar.TabIndex = 9;
-            this.cmdCancelar.Text = "Cancelar";
-            this.cmdCancelar.UseVisualStyleBackColor = true;
-            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
-            // 
-            // cmdModUsuario
-            // 
-            this.cmdModUsuario.Enabled = false;
-            this.cmdModUsuario.Location = new System.Drawing.Point(176, 134);
-            this.cmdModUsuario.Margin = new System.Windows.Forms.Padding(4);
-            this.cmdModUsuario.Name = "cmdModUsuario";
-            this.cmdModUsuario.Size = new System.Drawing.Size(155, 37);
-            this.cmdModUsuario.TabIndex = 10;
-            this.cmdModUsuario.Text = "Modificar Datos";
-            this.cmdModUsuario.UseVisualStyleBackColor = true;
-            this.cmdModUsuario.Click += new System.EventHandler(this.cmdModUsuario_Click);
-            // 
             // lblCampoObligatorio
             // 
             this.lblCampoObligatorio.AutoSize = true;
-            this.lblCampoObligatorio.Location = new System.Drawing.Point(24, 104);
+            this.lblCampoObligatorio.Location = new System.Drawing.Point(11, 292);
+            this.lblCampoObligatorio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCampoObligatorio.Name = "lblCampoObligatorio";
-            this.lblCampoObligatorio.Size = new System.Drawing.Size(144, 17);
+            this.lblCampoObligatorio.Size = new System.Drawing.Size(422, 13);
             this.lblCampoObligatorio.TabIndex = 11;
-            this.lblCampoObligatorio.Text = "(*) Campo Obligatorio";
+            this.lblCampoObligatorio.Text = "Llene los campos obligatorios (*) para agregar o modificar un usuario en el menú " +
+    "superior";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usuariosToolStripMenuItem,
+            this.editarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(637, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarToolStripMenuItem});
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarUsuarioToolStripMenuItem});
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // modificarUsuarioToolStripMenuItem
+            // 
+            this.modificarUsuarioToolStripMenuItem.Name = "modificarUsuarioToolStripMenuItem";
+            this.modificarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarUsuarioToolStripMenuItem.Text = "Modificar usuario";
+            this.modificarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.modificarUsuarioToolStripMenuItem_Click);
             // 
             // frmUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 188);
-            this.Controls.Add(this.lblCampoObligatorio);
-            this.Controls.Add(this.cmdModUsuario);
-            this.Controls.Add(this.cmdCancelar);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.cmdCargar);
-            this.Controls.Add(this.cmdNuevo);
+            this.ClientSize = new System.Drawing.Size(637, 382);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.lblCampoObligatorio);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.dgvUsuario);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmUsuario";
             this.Text = "Gestión de usuario";
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,11 +243,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn password;
-        private System.Windows.Forms.Button cmdNuevo;
-        private System.Windows.Forms.Button cmdCargar;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button cmdCancelar;
-        private System.Windows.Forms.Button cmdModUsuario;
         private System.Windows.Forms.Label lblCampoObligatorio;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarUsuarioToolStripMenuItem;
     }
 }

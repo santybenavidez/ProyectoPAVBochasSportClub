@@ -41,6 +41,12 @@
             this.lblFechaIni = new System.Windows.Forms.Label();
             this.lblFechaFin = new System.Windows.Forms.Label();
             this.dgvInscripcionBecas = new System.Windows.Forms.DataGridView();
+            this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nroBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaInicioBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaFinBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.btnRecibo = new System.Windows.Forms.Button();
             this.btnAñadir = new System.Windows.Forms.Button();
@@ -49,13 +55,8 @@
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.lblCliente = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nroBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaInicioBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaFinBeca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInscripcionBecas)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtNombreSocio
@@ -166,11 +167,44 @@
             this.nombreBeca,
             this.fechaInicioBeca,
             this.fechaFinBeca});
-            this.dgvInscripcionBecas.Location = new System.Drawing.Point(12, 149);
+            this.dgvInscripcionBecas.Location = new System.Drawing.Point(7, 117);
             this.dgvInscripcionBecas.Name = "dgvInscripcionBecas";
             this.dgvInscripcionBecas.RowHeadersVisible = false;
             this.dgvInscripcionBecas.Size = new System.Drawing.Size(593, 150);
             this.dgvInscripcionBecas.TabIndex = 19;
+            // 
+            // idSocio
+            // 
+            this.idSocio.HeaderText = "Numero Socio";
+            this.idSocio.Name = "idSocio";
+            this.idSocio.Width = 50;
+            // 
+            // nombreSocio
+            // 
+            this.nombreSocio.HeaderText = "Nombre Socio";
+            this.nombreSocio.Name = "nombreSocio";
+            this.nombreSocio.Width = 150;
+            // 
+            // nroBeca
+            // 
+            this.nroBeca.HeaderText = "Numero Beca";
+            this.nroBeca.Name = "nroBeca";
+            this.nroBeca.Width = 50;
+            // 
+            // nombreBeca
+            // 
+            this.nombreBeca.HeaderText = "Nombre Beca";
+            this.nombreBeca.Name = "nombreBeca";
+            // 
+            // fechaInicioBeca
+            // 
+            this.fechaInicioBeca.HeaderText = "Fecha inicio Beca";
+            this.fechaInicioBeca.Name = "fechaInicioBeca";
+            // 
+            // fechaFinBeca
+            // 
+            this.fechaFinBeca.HeaderText = "Fecha Fin Beca";
+            this.fechaFinBeca.Name = "fechaFinBeca";
             // 
             // btnLimpiarCampos
             // 
@@ -236,50 +270,18 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgvInscripcionBecas);
             this.groupBox1.Location = new System.Drawing.Point(8, 32);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(691, 288);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             // 
-            // idSocio
-            // 
-            this.idSocio.HeaderText = "Numero Socio";
-            this.idSocio.Name = "idSocio";
-            this.idSocio.Width = 50;
-            // 
-            // nombreSocio
-            // 
-            this.nombreSocio.HeaderText = "Nombre Socio";
-            this.nombreSocio.Name = "nombreSocio";
-            this.nombreSocio.Width = 150;
-            // 
-            // nroBeca
-            // 
-            this.nroBeca.HeaderText = "Numero Beca";
-            this.nroBeca.Name = "nroBeca";
-            this.nroBeca.Width = 50;
-            // 
-            // nombreBeca
-            // 
-            this.nombreBeca.HeaderText = "Nombre Beca";
-            this.nombreBeca.Name = "nombreBeca";
-            // 
-            // fechaInicioBeca
-            // 
-            this.fechaInicioBeca.HeaderText = "Fecha inicio Beca";
-            this.fechaInicioBeca.Name = "fechaInicioBeca";
-            // 
-            // fechaFinBeca
-            // 
-            this.fechaFinBeca.HeaderText = "Fecha Fin Beca";
-            this.fechaFinBeca.Name = "fechaFinBeca";
-            // 
             // frmInscripcionBeca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 349);
+            this.ClientSize = new System.Drawing.Size(711, 398);
             this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.lblDom);
             this.Controls.Add(this.txtCliente);
@@ -287,7 +289,6 @@
             this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.btnRecibo);
             this.Controls.Add(this.btnAñadir);
-            this.Controls.Add(this.dgvInscripcionBecas);
             this.Controls.Add(this.lblFechaFin);
             this.Controls.Add(this.lblFechaIni);
             this.Controls.Add(this.dtpFechaFin);
@@ -305,6 +306,7 @@
             this.Text = "Inscripcion Socio a Beca";
             this.Load += new System.EventHandler(this.frmInscripcionBeca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInscripcionBecas)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

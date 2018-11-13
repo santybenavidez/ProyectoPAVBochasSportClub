@@ -57,6 +57,7 @@
             this.lblDom = new System.Windows.Forms.Label();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInscripcionSocioADisciplina)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNroSocio
@@ -143,7 +144,7 @@
             // 
             // btnAñadir
             // 
-            this.btnAñadir.Location = new System.Drawing.Point(398, 118);
+            this.btnAñadir.Location = new System.Drawing.Point(398, 144);
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Size = new System.Drawing.Size(75, 43);
             this.btnAñadir.TabIndex = 11;
@@ -162,7 +163,7 @@
             this.disciplina,
             this.categoria,
             this.precioInscripcion});
-            this.dgvInscripcionSocioADisciplina.Location = new System.Drawing.Point(21, 167);
+            this.dgvInscripcionSocioADisciplina.Location = new System.Drawing.Point(9, 183);
             this.dgvInscripcionSocioADisciplina.Name = "dgvInscripcionSocioADisciplina";
             this.dgvInscripcionSocioADisciplina.RowHeadersVisible = false;
             this.dgvInscripcionSocioADisciplina.Size = new System.Drawing.Size(615, 148);
@@ -196,7 +197,7 @@
             // 
             // btnRecibo
             // 
-            this.btnRecibo.Location = new System.Drawing.Point(560, 118);
+            this.btnRecibo.Location = new System.Drawing.Point(560, 144);
             this.btnRecibo.Name = "btnRecibo";
             this.btnRecibo.Size = new System.Drawing.Size(75, 43);
             this.btnRecibo.TabIndex = 13;
@@ -206,7 +207,7 @@
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(479, 118);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(479, 144);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(75, 43);
             this.btnLimpiarCampos.TabIndex = 14;
@@ -217,7 +218,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(18, 133);
+            this.lblTotal.Location = new System.Drawing.Point(18, 165);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(76, 13);
             this.lblTotal.TabIndex = 15;
@@ -234,7 +235,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(114, 130);
+            this.txtTotal.Location = new System.Drawing.Point(114, 162);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(83, 20);
@@ -250,9 +251,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgvInscripcionSocioADisciplina);
             this.groupBox1.Location = new System.Drawing.Point(12, 33);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(634, 298);
+            this.groupBox1.Size = new System.Drawing.Size(634, 361);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             // 
@@ -269,13 +271,13 @@
             // 
             this.txtCliente.Location = new System.Drawing.Point(83, 7);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtCliente.Size = new System.Drawing.Size(169, 20);
             this.txtCliente.TabIndex = 21;
             // 
             // lblDom
             // 
             this.lblDom.AutoSize = true;
-            this.lblDom.Location = new System.Drawing.Point(208, 10);
+            this.lblDom.Location = new System.Drawing.Point(289, 10);
             this.lblDom.Name = "lblDom";
             this.lblDom.Size = new System.Drawing.Size(52, 13);
             this.lblDom.TabIndex = 22;
@@ -283,7 +285,7 @@
             // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(266, 7);
+            this.txtDomicilio.Location = new System.Drawing.Point(348, 10);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(288, 20);
             this.txtDomicilio.TabIndex = 23;
@@ -292,7 +294,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 343);
+            this.ClientSize = new System.Drawing.Size(685, 406);
             this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.lblDom);
             this.Controls.Add(this.txtCliente);
@@ -303,7 +305,6 @@
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnLimpiarCampos);
             this.Controls.Add(this.btnRecibo);
-            this.Controls.Add(this.dgvInscripcionSocioADisciplina);
             this.Controls.Add(this.btnAñadir);
             this.Controls.Add(this.cmbDisciplinas);
             this.Controls.Add(this.cmbCategoria);
@@ -320,6 +321,7 @@
             this.Text = "Inscripcion Socio a Disciplina";
             this.Load += new System.EventHandler(this.frmInscripcionADisciplina_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInscripcionSocioADisciplina)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

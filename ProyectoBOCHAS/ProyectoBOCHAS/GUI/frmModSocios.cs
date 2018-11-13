@@ -124,10 +124,20 @@ namespace ProyectoBOCHAS
         private void cmdCancelar_Click(object sender, EventArgs e)
         {
             txtApellidoNuevo.Enabled = false;
+            txtApellidoNuevo.Text = string.Empty;
+
             txtNombreNuevo.Enabled = false;
+            txtNombreNuevo.Text = string.Empty;
+
             txtDireccion.Enabled = false;
+            txtDireccion.Text = string.Empty;
+
             txtTelefono.Enabled = false;
+            txtTelefono.Text = string.Empty;
+
             txtResponsable.Enabled = false;
+            txtResponsable.Text = string.Empty;
+
             cmdModificar.Enabled = false;
             cmdEliminar.Enabled = false;
             cmdTelefono.Enabled = false;

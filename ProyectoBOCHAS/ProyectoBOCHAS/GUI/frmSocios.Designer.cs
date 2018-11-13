@@ -49,15 +49,18 @@
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblDni = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.cmdNuevo = new System.Windows.Forms.Button();
-            this.cmdCancelar = new System.Windows.Forms.Button();
-            this.cmdModificar = new System.Windows.Forms.Button();
-            this.cmdHabilitar = new System.Windows.Forms.Button();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtResponsable = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblResponsable = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.socioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarSocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvSocios
@@ -72,12 +75,13 @@
             this.fechaNacimiento,
             this.nroTelefono,
             this.responsableTelefono});
-            this.dgvSocios.Location = new System.Drawing.Point(13, 13);
+            this.dgvSocios.Location = new System.Drawing.Point(10, 26);
+            this.dgvSocios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvSocios.Name = "dgvSocios";
             this.dgvSocios.RowHeadersVisible = false;
             this.dgvSocios.RowTemplate.Height = 24;
             this.dgvSocios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSocios.Size = new System.Drawing.Size(1183, 150);
+            this.dgvSocios.Size = new System.Drawing.Size(887, 181);
             this.dgvSocios.TabIndex = 0;
             // 
             // idSocio
@@ -125,194 +129,212 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Enabled = false;
-            this.txtApellido.Location = new System.Drawing.Point(177, 169);
+            this.txtApellido.Location = new System.Drawing.Point(165, 227);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(117, 22);
+            this.txtApellido.Size = new System.Drawing.Size(89, 20);
             this.txtApellido.TabIndex = 1;
             // 
             // txtNombre
             // 
-            this.txtNombre.Enabled = false;
-            this.txtNombre.Location = new System.Drawing.Point(177, 197);
+            this.txtNombre.Location = new System.Drawing.Point(165, 250);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(117, 22);
+            this.txtNombre.Size = new System.Drawing.Size(89, 20);
             this.txtNombre.TabIndex = 2;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Enabled = false;
-            this.txtDireccion.Location = new System.Drawing.Point(177, 225);
+            this.txtDireccion.Location = new System.Drawing.Point(165, 273);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(117, 22);
+            this.txtDireccion.Size = new System.Drawing.Size(89, 20);
             this.txtDireccion.TabIndex = 3;
             // 
             // txtDni
             // 
-            this.txtDni.Enabled = false;
-            this.txtDni.Location = new System.Drawing.Point(177, 254);
+            this.txtDni.Location = new System.Drawing.Point(165, 296);
+            this.txtDni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(117, 22);
+            this.txtDni.Size = new System.Drawing.Size(89, 20);
             this.txtDni.TabIndex = 4;
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Enabled = false;
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(177, 340);
+            this.dtpFecha.Location = new System.Drawing.Point(165, 366);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(117, 22);
+            this.dtpFecha.Size = new System.Drawing.Size(89, 20);
             this.dtpFecha.TabIndex = 7;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(90, 172);
+            this.lblApellido.Location = new System.Drawing.Point(11, 230);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(81, 17);
+            this.lblApellido.Size = new System.Drawing.Size(198, 13);
             this.lblApellido.TabIndex = 6;
-            this.lblApellido.Text = "Apellido: (*)";
+            this.lblApellido.Text = "Apellido: (*)..............................................";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(90, 200);
+            this.lblNombre.Location = new System.Drawing.Point(11, 253);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(81, 17);
+            this.lblNombre.Size = new System.Drawing.Size(204, 13);
             this.lblNombre.TabIndex = 7;
-            this.lblNombre.Text = "Nombre: (*)";
+            this.lblNombre.Text = "Nombre: (*)................................................";
             // 
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(100, 228);
+            this.lblDireccion.Location = new System.Drawing.Point(11, 276);
+            this.lblDireccion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(71, 17);
+            this.lblDireccion.Size = new System.Drawing.Size(163, 13);
             this.lblDireccion.TabIndex = 8;
-            this.lblDireccion.Text = "Dirección:";
+            this.lblDireccion.Text = "Dirección:....................................";
             // 
             // lblDni
             // 
             this.lblDni.AutoSize = true;
-            this.lblDni.Location = new System.Drawing.Point(117, 254);
+            this.lblDni.Location = new System.Drawing.Point(11, 299);
+            this.lblDni.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDni.Name = "lblDni";
-            this.lblDni.Size = new System.Drawing.Size(54, 17);
+            this.lblDni.Size = new System.Drawing.Size(186, 13);
             this.lblDni.TabIndex = 9;
-            this.lblDni.Text = "DNI: (*)";
+            this.lblDni.Text = "DNI: (*)................................................";
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(7, 340);
+            this.lblFecha.Location = new System.Drawing.Point(11, 369);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(164, 17);
+            this.lblFecha.Size = new System.Drawing.Size(160, 13);
             this.lblFecha.TabIndex = 10;
-            this.lblFecha.Text = "Fecha de Nacimiento: (*)";
-            // 
-            // cmdNuevo
-            // 
-            this.cmdNuevo.Location = new System.Drawing.Point(311, 204);
-            this.cmdNuevo.Name = "cmdNuevo";
-            this.cmdNuevo.Size = new System.Drawing.Size(84, 37);
-            this.cmdNuevo.TabIndex = 8;
-            this.cmdNuevo.Text = "Agregar";
-            this.cmdNuevo.UseVisualStyleBackColor = true;
-            this.cmdNuevo.Click += new System.EventHandler(this.cmdNuevo_Click);
-            // 
-            // cmdCancelar
-            // 
-            this.cmdCancelar.Location = new System.Drawing.Point(401, 204);
-            this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(84, 37);
-            this.cmdCancelar.TabIndex = 9;
-            this.cmdCancelar.Text = "Cancelar";
-            this.cmdCancelar.UseVisualStyleBackColor = true;
-            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
-            // 
-            // cmdModificar
-            // 
-            this.cmdModificar.Location = new System.Drawing.Point(311, 247);
-            this.cmdModificar.Name = "cmdModificar";
-            this.cmdModificar.Size = new System.Drawing.Size(174, 37);
-            this.cmdModificar.TabIndex = 10;
-            this.cmdModificar.Text = "Modificar/Eliminar";
-            this.cmdModificar.UseVisualStyleBackColor = true;
-            this.cmdModificar.Click += new System.EventHandler(this.cmdModificar_Click);
-            // 
-            // cmdHabilitar
-            // 
-            this.cmdHabilitar.Location = new System.Drawing.Point(311, 205);
-            this.cmdHabilitar.Name = "cmdHabilitar";
-            this.cmdHabilitar.Size = new System.Drawing.Size(174, 79);
-            this.cmdHabilitar.TabIndex = 15;
-            this.cmdHabilitar.Text = "Nueva Acción";
-            this.cmdHabilitar.UseVisualStyleBackColor = true;
-            this.cmdHabilitar.Click += new System.EventHandler(this.cmdHabilitar_Click);
+            this.lblFecha.Text = "Fecha de Nacimiento: (*)............";
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Enabled = false;
-            this.txtTelefono.Location = new System.Drawing.Point(177, 283);
+            this.txtTelefono.Location = new System.Drawing.Point(165, 320);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(117, 22);
+            this.txtTelefono.Size = new System.Drawing.Size(89, 20);
             this.txtTelefono.TabIndex = 5;
             // 
             // txtResponsable
             // 
-            this.txtResponsable.Enabled = false;
-            this.txtResponsable.Location = new System.Drawing.Point(177, 312);
+            this.txtResponsable.Location = new System.Drawing.Point(165, 344);
+            this.txtResponsable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtResponsable.Name = "txtResponsable";
-            this.txtResponsable.Size = new System.Drawing.Size(117, 22);
+            this.txtResponsable.Size = new System.Drawing.Size(89, 20);
             this.txtResponsable.TabIndex = 6;
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(84, 286);
+            this.lblTelefono.Location = new System.Drawing.Point(11, 323);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(87, 17);
+            this.lblTelefono.Size = new System.Drawing.Size(200, 13);
             this.lblTelefono.TabIndex = 18;
-            this.lblTelefono.Text = "Telefono: (*)";
+            this.lblTelefono.Text = "Telefono: (*).............................................";
             // 
             // lblResponsable
             // 
             this.lblResponsable.AutoSize = true;
-            this.lblResponsable.Location = new System.Drawing.Point(57, 315);
+            this.lblResponsable.Location = new System.Drawing.Point(11, 347);
+            this.lblResponsable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResponsable.Name = "lblResponsable";
-            this.lblResponsable.Size = new System.Drawing.Size(114, 17);
+            this.lblResponsable.Size = new System.Drawing.Size(199, 13);
             this.lblResponsable.TabIndex = 19;
-            this.lblResponsable.Text = "Responsable: (*)";
+            this.lblResponsable.Text = "Responsable: (*)......................................";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.socioToolStripMenuItem,
+            this.editarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(911, 24);
+            this.menuStrip1.TabIndex = 20;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // socioToolStripMenuItem
+            // 
+            this.socioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarToolStripMenuItem});
+            this.socioToolStripMenuItem.Name = "socioToolStripMenuItem";
+            this.socioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.socioToolStripMenuItem.Text = "Socio";
+            // 
+            // agregarToolStripMenuItem
+            // 
+            this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Text = "Agregar";
+            this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarSocioToolStripMenuItem});
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // modificarSocioToolStripMenuItem
+            // 
+            this.modificarSocioToolStripMenuItem.Name = "modificarSocioToolStripMenuItem";
+            this.modificarSocioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarSocioToolStripMenuItem.Text = "Modificar socio";
+            this.modificarSocioToolStripMenuItem.Click += new System.EventHandler(this.modificarSocioToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(298, 230);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(486, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Complete los valores en los campos obligatorios (*) y luego seleccione una acción" +
+    " en el panel superior";
             // 
             // frmSocios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1503, 411);
-            this.Controls.Add(this.lblResponsable);
-            this.Controls.Add(this.lblTelefono);
+            this.ClientSize = new System.Drawing.Size(911, 436);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtResponsable);
             this.Controls.Add(this.txtTelefono);
-            this.Controls.Add(this.cmdHabilitar);
-            this.Controls.Add(this.cmdModificar);
-            this.Controls.Add(this.cmdCancelar);
-            this.Controls.Add(this.cmdNuevo);
-            this.Controls.Add(this.lblFecha);
-            this.Controls.Add(this.lblDni);
-            this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.txtDni);
             this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.lblResponsable);
+            this.Controls.Add(this.lblTelefono);
+            this.Controls.Add(this.lblFecha);
+            this.Controls.Add(this.lblDni);
+            this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.dgvSocios);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmSocios";
             this.Text = "Socios";
             this.Load += new System.EventHandler(this.frmSocios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,10 +353,6 @@
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.Button cmdNuevo;
-        private System.Windows.Forms.Button cmdCancelar;
-        private System.Windows.Forms.Button cmdModificar;
-        private System.Windows.Forms.Button cmdHabilitar;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSocio;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
@@ -347,5 +365,11 @@
         private System.Windows.Forms.TextBox txtResponsable;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblResponsable;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem socioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarSocioToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
