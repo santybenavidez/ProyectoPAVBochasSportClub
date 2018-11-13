@@ -114,5 +114,17 @@ namespace ProyectoBOCHAS
             frmVentasXTipoProducto frmVentasxTipoProductos = new frmVentasXTipoProducto();
             frmVentasxTipoProductos.ShowDialog();
         }
+
+        private void listadoCompletoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListadoCompletoSocios listado = new frmListadoCompletoSocios();
+            listado.ShowDialog();
+        }
+
+        private void recibosPorFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecibosPorFecha frmRecibo = new frmRecibosPorFecha();
+            frmRecibo.ShowDialog();
+        }
     }
 }

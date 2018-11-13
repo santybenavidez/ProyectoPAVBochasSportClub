@@ -28,17 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.SociosXDisciplina = new ProyectoBOCHAS.SociosXDisciplina();
+            this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataTable1TableAdapter = new ProyectoBOCHAS.SociosXDisciplinaTableAdapters.DataTable1TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.SociosXDisciplina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "Socios";
+            reportDataSource1.Value = this.DataTable1BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ProyectoBOCHAS.repoListadoCompletoSocios.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
+            // 
+            // SociosXDisciplina
+            // 
+            this.SociosXDisciplina.DataSetName = "SociosXDisciplina";
+            this.SociosXDisciplina.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // DataTable1BindingSource
+            // 
+            this.DataTable1BindingSource.DataMember = "DataTable1";
+            this.DataTable1BindingSource.DataSource = this.SociosXDisciplina;
+            // 
+            // DataTable1TableAdapter
+            // 
+            this.DataTable1TableAdapter.ClearBeforeFill = true;
             // 
             // frmListadoCompletoSocios
             // 
@@ -49,6 +74,8 @@
             this.Name = "frmListadoCompletoSocios";
             this.Text = "frmListadoCompletoSocios";
             this.Load += new System.EventHandler(this.frmListadoCompletoSocios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.SociosXDisciplina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -56,5 +83,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource DataTable1BindingSource;
+        private SociosXDisciplina SociosXDisciplina;
+        private SociosXDisciplinaTableAdapters.DataTable1TableAdapter DataTable1TableAdapter;
     }
 }

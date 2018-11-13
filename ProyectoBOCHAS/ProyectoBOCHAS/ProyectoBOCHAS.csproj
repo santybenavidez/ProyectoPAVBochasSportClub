@@ -63,10 +63,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmListadoCompletoSocios.cs">
+    <Compile Include="frmRecibosPorFecha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmListadoCompletoSocios.Designer.cs">
+    <Compile Include="frmRecibosPorFecha.Designer.cs">
+      <DependentUpon>frmRecibosPorFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoCompletoSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoCompletoSocios.Designer.cs">
       <DependentUpon>frmListadoCompletoSocios.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\frmVentasXTipoProducto.cs">
@@ -206,9 +212,14 @@
     <Compile Include="Negocio\TiposProductos.cs" />
     <Compile Include="Transacciones\transaccionInscripcionADisciplina.cs" />
     <Compile Include="Validadores\Validadores.cs" />
-    <EmbeddedResource Include="frmListadoCompletoSocios.resx">
+    <EmbeddedResource Include="frmRecibosPorFecha.resx">
+      <DependentUpon>frmRecibosPorFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoCompletoSocios.resx">
       <DependentUpon>frmListadoCompletoSocios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="repoListadoCompletoSocios.rdlc" />
+    <EmbeddedResource Include="repoReciboPorFecha.rdlc" />
     <EmbeddedResource Include="Reportes\frmVentasXTipoProducto.resx">
       <DependentUpon>frmVentasXTipoProducto.cs</DependentUpon>
     </EmbeddedResource>

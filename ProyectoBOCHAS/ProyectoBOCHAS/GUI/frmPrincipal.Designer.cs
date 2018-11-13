@@ -46,10 +46,11 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeSociosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porDisciplinaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoCompletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recibosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasPorTiposDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoCompletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recibosPorFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -195,10 +196,18 @@
             this.porDisciplinaToolStripMenuItem.Text = "Por Disciplina";
             this.porDisciplinaToolStripMenuItem.Click += new System.EventHandler(this.porDisciplinaToolStripMenuItem_Click);
             // 
+            // listadoCompletoToolStripMenuItem
+            // 
+            this.listadoCompletoToolStripMenuItem.Name = "listadoCompletoToolStripMenuItem";
+            this.listadoCompletoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoCompletoToolStripMenuItem.Text = "Listado completo";
+            this.listadoCompletoToolStripMenuItem.Click += new System.EventHandler(this.listadoCompletoToolStripMenuItem_Click);
+            // 
             // recibosToolStripMenuItem
             // 
             this.recibosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ventasPorTiposDeProductosToolStripMenuItem});
+            this.ventasPorTiposDeProductosToolStripMenuItem,
+            this.recibosPorFechaToolStripMenuItem});
             this.recibosToolStripMenuItem.Name = "recibosToolStripMenuItem";
             this.recibosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.recibosToolStripMenuItem.Text = "Recibos";
@@ -217,11 +226,12 @@
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
-            // listadoCompletoToolStripMenuItem
+            // recibosPorFechaToolStripMenuItem
             // 
-            this.listadoCompletoToolStripMenuItem.Name = "listadoCompletoToolStripMenuItem";
-            this.listadoCompletoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listadoCompletoToolStripMenuItem.Text = "Listado completo";
+            this.recibosPorFechaToolStripMenuItem.Name = "recibosPorFechaToolStripMenuItem";
+            this.recibosPorFechaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.recibosPorFechaToolStripMenuItem.Text = "Recibos por Fecha";
+            this.recibosPorFechaToolStripMenuItem.Click += new System.EventHandler(this.recibosPorFechaToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -232,7 +242,7 @@
             this.Controls.Add(this.menuStrip2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip2;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
@@ -292,5 +302,6 @@
         private System.Windows.Forms.ToolStripMenuItem recibosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasPorTiposDeProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoCompletoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recibosPorFechaToolStripMenuItem;
     }
 }

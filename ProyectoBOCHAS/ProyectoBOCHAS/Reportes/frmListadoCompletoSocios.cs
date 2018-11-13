@@ -19,6 +19,8 @@ namespace ProyectoBOCHAS
 
         private void frmListadoCompletoSocios_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'SociosXDisciplina.DataTable1' table. You can move, or remove it, as needed.
+            this.DataTable1TableAdapter.Fill(this.SociosXDisciplina.DataTable1);
 
             this.reportViewer1.RefreshReport();
         }
