@@ -49,8 +49,8 @@
             this.listadoCompletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recibosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasPorTiposDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recibosPorFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -186,20 +186,20 @@
             this.porDisciplinaToolStripMenuItem,
             this.listadoCompletoToolStripMenuItem});
             this.listadoDeSociosToolStripMenuItem.Name = "listadoDeSociosToolStripMenuItem";
-            this.listadoDeSociosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoDeSociosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.listadoDeSociosToolStripMenuItem.Text = "Listado de Socios";
             // 
             // porDisciplinaToolStripMenuItem
             // 
             this.porDisciplinaToolStripMenuItem.Name = "porDisciplinaToolStripMenuItem";
-            this.porDisciplinaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porDisciplinaToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.porDisciplinaToolStripMenuItem.Text = "Por Disciplina";
             this.porDisciplinaToolStripMenuItem.Click += new System.EventHandler(this.porDisciplinaToolStripMenuItem_Click);
             // 
             // listadoCompletoToolStripMenuItem
             // 
             this.listadoCompletoToolStripMenuItem.Name = "listadoCompletoToolStripMenuItem";
-            this.listadoCompletoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoCompletoToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.listadoCompletoToolStripMenuItem.Text = "Listado completo";
             this.listadoCompletoToolStripMenuItem.Click += new System.EventHandler(this.listadoCompletoToolStripMenuItem_Click);
             // 
@@ -209,7 +209,7 @@
             this.ventasPorTiposDeProductosToolStripMenuItem,
             this.recibosPorFechaToolStripMenuItem});
             this.recibosToolStripMenuItem.Name = "recibosToolStripMenuItem";
-            this.recibosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recibosToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.recibosToolStripMenuItem.Text = "Recibos";
             // 
             // ventasPorTiposDeProductosToolStripMenuItem
@@ -219,19 +219,19 @@
             this.ventasPorTiposDeProductosToolStripMenuItem.Text = "Ventas por Tipos de Producto";
             this.ventasPorTiposDeProductosToolStripMenuItem.Click += new System.EventHandler(this.ventasPorTiposDeProductosToolStripMenuItem_Click);
             // 
-            // cerrarSesiónToolStripMenuItem
-            // 
-            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
-            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
-            // 
             // recibosPorFechaToolStripMenuItem
             // 
             this.recibosPorFechaToolStripMenuItem.Name = "recibosPorFechaToolStripMenuItem";
             this.recibosPorFechaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.recibosPorFechaToolStripMenuItem.Text = "Recibos por Fecha";
             this.recibosPorFechaToolStripMenuItem.Click += new System.EventHandler(this.recibosPorFechaToolStripMenuItem_Click);
+            // 
+            // cerrarSesiónToolStripMenuItem
+            // 
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
+            this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 

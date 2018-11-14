@@ -66,6 +66,7 @@ namespace ProyectoBOCHAS
         {
             frmTipoProducto frmTipoProducto = new frmTipoProducto();
             frmTipoProducto.ShowDialog();
+            llenarCombo(cbxTipo, tipos.consultarTiposProducto(), "n", "nombre");
         }
 
         private void frmProductos_Load(object sender, EventArgs e)
