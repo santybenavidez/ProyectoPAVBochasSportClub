@@ -63,10 +63,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmRecibosPorFecha.cs">
+    <Compile Include="Reportes\frmRecibosPorFecha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRecibosPorFecha.Designer.cs">
+    <Compile Include="Reportes\frmRecibosPorFecha.Designer.cs">
       <DependentUpon>frmRecibosPorFecha.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\frmListadoCompletoSocios.cs">
@@ -212,7 +212,7 @@
     <Compile Include="Negocio\TiposProductos.cs" />
     <Compile Include="Transacciones\transaccionInscripcionADisciplina.cs" />
     <Compile Include="Validadores\Validadores.cs" />
-    <EmbeddedResource Include="frmRecibosPorFecha.resx">
+    <EmbeddedResource Include="Reportes\frmRecibosPorFecha.resx">
       <DependentUpon>frmRecibosPorFecha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoCompletoSocios.resx">
