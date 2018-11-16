@@ -29,8 +29,7 @@ namespace ProyectoBOCHAS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fechaDesde = dateTimePicker1.Value.ToString("MM/dd/yyyy");
-            fechaHasta = dateTimePicker2.Value.ToString("MM/dd/yyyy");
+            
 
 
             //EMPIEZA COPY PASTE DE STACKOVERFLOW

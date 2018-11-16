@@ -307,3 +307,5 @@ C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\Proyec
 C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.csproj.CopyComplete
 C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmListadoCompletoSocios.resources
 C:\Users\simon\Documents\GitHub\ProyectoPAVBochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibosPorFecha.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmRecibosPorFecha.resources
+C:\Users\lucas\Desktop\FACULTAD\Visual Studio\ProyectoGIT\ProyectoPAVbochasSportClub\ProyectoBOCHAS\ProyectoBOCHAS\obj\Debug\ProyectoBOCHAS.frmListadoCompletoSocios.resources

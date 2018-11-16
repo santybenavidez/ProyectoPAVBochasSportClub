@@ -13,6 +13,9 @@ namespace ProyectoBOCHAS
 {
     public partial class frmVentasXTipoProducto : Form
     {
+        string fechaDesde = "";
+        string fechaHasta = "";
+
         public frmVentasXTipoProducto()
         {
             InitializeComponent();
@@ -20,14 +23,7 @@ namespace ProyectoBOCHAS
 
         private void frmVentasXTipoProducto_Load(object sender, EventArgs e)
         {
-            //EMPIEZA COPY PASTE DE STACKOVERFLOW
-            DataSet ds = GetDataSet();
-            ReportDataSource rds = new ReportDataSource("DataSet1", ds.Tables[0]);
-            reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.DataSources.Add(rds);
-            //TERMINA COPY PASTE DE STACKOVERFLOW
-
-            this.reportViewer1.RefreshReport();
+            
         }
 
         private DataSet GetDataSet() //TODO ESTO ES STACKOVERFLOW https://stackoverflow.com/questions/13332611/a-data-source-instance-has-not-been-supplied-for-the-data-sourceproduct-detail
@@ -41,14 +37,29 @@ namespace ProyectoBOCHAS
         VentaProductos ON Recibo.nroRecibo = VentaProductos.nroRecibo INNER JOIN
         Productos ON VentaProductos.idProductos = Productos.idProductos AND VentaProductos.idTipoProducto = Productos.idTipoProducto INNER JOIN
         TipoProducto ON Productos.idTipoProducto = TipoProducto.idTipoProducto
-        GROUP BY TipoProducto.nombre
-        ORDER BY Ventas";
+        WHERE Recibo.fechaRecibo BETWEEN '" + fechaDesde + "' AND '" + fechaHasta + "'";
+            sql += "GROUP BY TipoProducto.nombre ORDER BY Ventas";
 
             System.Data.SqlClient.SqlDataAdapter ad = new System.Data.SqlClient.SqlDataAdapter(sql, sqlConn);
             DataSet ds = new DataSet();
             ad.Fill(ds);
             sqlConn.Close();
             return ds;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fechaDesde = dateTimePicker1.Value.ToString("MM/dd/yyyy");
+            fechaHasta = dateTimePicker2.Value.ToString("MM/dd/yyyy");
+
+            //EMPIEZA COPY PASTE DE STACKOVERFLOW
+            DataSet ds = GetDataSet();
+            ReportDataSource rds = new ReportDataSource("DataSet1", ds.Tables[0]);
+            reportViewer1.LocalReport.DataSources.Clear();
+            reportViewer1.LocalReport.DataSources.Add(rds);
+            //TERMINA COPY PASTE DE STACKOVERFLOW
+
+            this.reportViewer1.RefreshReport();
         }
     }
 }
