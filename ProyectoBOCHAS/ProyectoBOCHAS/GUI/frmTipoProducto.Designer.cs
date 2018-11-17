@@ -65,6 +65,7 @@
             this.dgvTipoProducto.Location = new System.Drawing.Point(16, 15);
             this.dgvTipoProducto.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTipoProducto.Name = "dgvTipoProducto";
+            this.dgvTipoProducto.ReadOnly = true;
             this.dgvTipoProducto.RowHeadersVisible = false;
             this.dgvTipoProducto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTipoProducto.Size = new System.Drawing.Size(708, 146);
@@ -77,12 +78,14 @@
             this.idTipoProducto.HeaderText = "# Tipo Producto";
             this.idTipoProducto.MinimumWidth = 50;
             this.idTipoProducto.Name = "idTipoProducto";
+            this.idTipoProducto.ReadOnly = true;
             this.idTipoProducto.Width = 127;
             // 
             // nombre
             // 
             this.nombre.HeaderText = "Nombre";
             this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
             // 
             // cmdCargarTipoIni
             // 

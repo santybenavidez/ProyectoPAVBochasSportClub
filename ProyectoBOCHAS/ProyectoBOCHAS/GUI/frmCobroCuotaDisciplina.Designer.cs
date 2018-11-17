@@ -45,18 +45,18 @@
             this.cmbMes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDetalle = new System.Windows.Forms.DataGridView();
-            this.cmbDisciplinas = new System.Windows.Forms.ComboBox();
-            this.cmbCategoria = new System.Windows.Forms.ComboBox();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblDisciplina = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCuota = new System.Windows.Forms.TextBox();
             this.idSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreSocio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.disciplina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cuota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbDisciplinas = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblDisciplina = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCuota = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,10 +231,47 @@
             this.mes});
             this.dgvDetalle.Location = new System.Drawing.Point(17, 119);
             this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.RowHeadersVisible = false;
             this.dgvDetalle.RowTemplate.Height = 24;
             this.dgvDetalle.Size = new System.Drawing.Size(807, 270);
             this.dgvDetalle.TabIndex = 48;
+            // 
+            // idSocio
+            // 
+            this.idSocio.HeaderText = "# Socio";
+            this.idSocio.Name = "idSocio";
+            this.idSocio.ReadOnly = true;
+            // 
+            // nombreSocio
+            // 
+            this.nombreSocio.HeaderText = "Nombre Socio";
+            this.nombreSocio.Name = "nombreSocio";
+            this.nombreSocio.ReadOnly = true;
+            // 
+            // disciplina
+            // 
+            this.disciplina.HeaderText = "Disciplina";
+            this.disciplina.Name = "disciplina";
+            this.disciplina.ReadOnly = true;
+            // 
+            // categoria
+            // 
+            this.categoria.HeaderText = "Categoria";
+            this.categoria.Name = "categoria";
+            this.categoria.ReadOnly = true;
+            // 
+            // cuota
+            // 
+            this.cuota.HeaderText = "Precio Cuota";
+            this.cuota.Name = "cuota";
+            this.cuota.ReadOnly = true;
+            // 
+            // mes
+            // 
+            this.mes.HeaderText = "Mes";
+            this.mes.Name = "mes";
+            this.mes.ReadOnly = true;
             // 
             // cmbDisciplinas
             // 
@@ -294,36 +331,6 @@
             this.txtCuota.ReadOnly = true;
             this.txtCuota.Size = new System.Drawing.Size(127, 22);
             this.txtCuota.TabIndex = 54;
-            // 
-            // idSocio
-            // 
-            this.idSocio.HeaderText = "# Socio";
-            this.idSocio.Name = "idSocio";
-            // 
-            // nombreSocio
-            // 
-            this.nombreSocio.HeaderText = "Nombre Socio";
-            this.nombreSocio.Name = "nombreSocio";
-            // 
-            // disciplina
-            // 
-            this.disciplina.HeaderText = "Disciplina";
-            this.disciplina.Name = "disciplina";
-            // 
-            // categoria
-            // 
-            this.categoria.HeaderText = "Categoria";
-            this.categoria.Name = "categoria";
-            // 
-            // cuota
-            // 
-            this.cuota.HeaderText = "Precio Cuota";
-            this.cuota.Name = "cuota";
-            // 
-            // mes
-            // 
-            this.mes.HeaderText = "Mes";
-            this.mes.Name = "mes";
             // 
             // frmCobroCuotaDisciplina
             // 

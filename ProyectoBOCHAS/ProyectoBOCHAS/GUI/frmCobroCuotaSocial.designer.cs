@@ -56,7 +56,7 @@
             // 
             this.txtNombreSocio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtNombreSocio.Location = new System.Drawing.Point(369, 47);
-            this.txtNombreSocio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreSocio.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreSocio.Name = "txtNombreSocio";
             this.txtNombreSocio.ReadOnly = true;
             this.txtNombreSocio.Size = new System.Drawing.Size(433, 22);
@@ -65,7 +65,7 @@
             // txtNroSocio
             // 
             this.txtNroSocio.Location = new System.Drawing.Point(125, 48);
-            this.txtNroSocio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNroSocio.Margin = new System.Windows.Forms.Padding(4);
             this.txtNroSocio.Name = "txtNroSocio";
             this.txtNroSocio.Size = new System.Drawing.Size(52, 22);
             this.txtNroSocio.TabIndex = 16;
@@ -73,7 +73,7 @@
             // cmdBuscar
             // 
             this.cmdBuscar.Location = new System.Drawing.Point(187, 47);
-            this.cmdBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.cmdBuscar.Name = "cmdBuscar";
             this.cmdBuscar.Size = new System.Drawing.Size(47, 26);
             this.cmdBuscar.TabIndex = 15;
@@ -124,7 +124,7 @@
             // txtCliente
             // 
             this.txtCliente.Location = new System.Drawing.Point(76, 7);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(284, 22);
             this.txtCliente.TabIndex = 22;
@@ -132,7 +132,7 @@
             // txtDomicilio
             // 
             this.txtDomicilio.Location = new System.Drawing.Point(455, 7);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(348, 22);
             this.txtDomicilio.TabIndex = 23;
@@ -140,7 +140,7 @@
             // btnLimpiarCampos
             // 
             this.btnLimpiarCampos.Location = new System.Drawing.Point(844, 153);
-            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
             this.btnLimpiarCampos.Size = new System.Drawing.Size(100, 53);
             this.btnLimpiarCampos.TabIndex = 29;
@@ -151,7 +151,7 @@
             // btnRecibo
             // 
             this.btnRecibo.Location = new System.Drawing.Point(844, 92);
-            this.btnRecibo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecibo.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecibo.Name = "btnRecibo";
             this.btnRecibo.Size = new System.Drawing.Size(100, 53);
             this.btnRecibo.TabIndex = 28;
@@ -162,7 +162,7 @@
             // btnAñadir
             // 
             this.btnAñadir.Location = new System.Drawing.Point(844, 32);
-            this.btnAñadir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAñadir.Margin = new System.Windows.Forms.Padding(4);
             this.btnAñadir.Name = "btnAñadir";
             this.btnAñadir.Size = new System.Drawing.Size(100, 53);
             this.btnAñadir.TabIndex = 27;
@@ -183,7 +183,7 @@
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(693, 101);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(109, 22);
@@ -204,7 +204,7 @@
             this.cmbMes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMes.FormattingEnabled = true;
             this.cmbMes.Location = new System.Drawing.Point(187, 101);
-            this.cmbMes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbMes.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMes.Name = "cmbMes";
             this.cmbMes.Size = new System.Drawing.Size(160, 24);
             this.cmbMes.TabIndex = 33;
@@ -219,8 +219,9 @@
             this.nombreSocio,
             this.mesQueCorresponde});
             this.dgvDetalle.Location = new System.Drawing.Point(17, 159);
-            this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.RowHeadersVisible = false;
             this.dgvDetalle.Size = new System.Drawing.Size(788, 185);
             this.dgvDetalle.TabIndex = 26;
@@ -230,20 +231,23 @@
             this.idSocio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.idSocio.HeaderText = "Numero Socio";
             this.idSocio.Name = "idSocio";
-            this.idSocio.Width = 126;
+            this.idSocio.ReadOnly = true;
+            this.idSocio.Width = 116;
             // 
             // nombreSocio
             // 
             this.nombreSocio.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.nombreSocio.HeaderText = "Nombre Socio";
             this.nombreSocio.Name = "nombreSocio";
-            this.nombreSocio.Width = 126;
+            this.nombreSocio.ReadOnly = true;
+            this.nombreSocio.Width = 116;
             // 
             // mesQueCorresponde
             // 
             this.mesQueCorresponde.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.mesQueCorresponde.HeaderText = "Mes a que corresponde";
             this.mesQueCorresponde.Name = "mesQueCorresponde";
+            this.mesQueCorresponde.ReadOnly = true;
             this.mesQueCorresponde.Width = 171;
             // 
             // frmCobroCuotaSocial
@@ -269,7 +273,7 @@
             this.Controls.Add(this.lblNomSocio);
             this.Controls.Add(this.lblNroSocio);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCobroCuotaSocial";
             this.Text = "Cobro cuota social ";
             this.Load += new System.EventHandler(this.frmCobroCuotaSocial_Load);

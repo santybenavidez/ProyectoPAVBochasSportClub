@@ -85,8 +85,9 @@
             this.dgvDetalle.AllowUserToDeleteRows = false;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalle.Location = new System.Drawing.Point(16, 223);
-            this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.RowHeadersVisible = false;
             this.dgvDetalle.Size = new System.Drawing.Size(707, 185);
             this.dgvDetalle.TabIndex = 3;
@@ -124,7 +125,7 @@
             // txtFecha
             // 
             this.txtFecha.Location = new System.Drawing.Point(205, 65);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(4);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(132, 22);
             this.txtFecha.TabIndex = 9;
@@ -132,7 +133,7 @@
             // txtNroRecibo
             // 
             this.txtNroRecibo.Location = new System.Drawing.Point(205, 22);
-            this.txtNroRecibo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNroRecibo.Margin = new System.Windows.Forms.Padding(4);
             this.txtNroRecibo.Name = "txtNroRecibo";
             this.txtNroRecibo.Size = new System.Drawing.Size(132, 22);
             this.txtNroRecibo.TabIndex = 10;
@@ -145,9 +146,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(361, 108);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
@@ -155,7 +156,7 @@
             // txtNombreCliente
             // 
             this.txtNombreCliente.Location = new System.Drawing.Point(120, 138);
-            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Size = new System.Drawing.Size(589, 22);
             this.txtNombreCliente.TabIndex = 11;
@@ -163,7 +164,7 @@
             // txtDomicilio
             // 
             this.txtDomicilio.Location = new System.Drawing.Point(120, 174);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(589, 22);
             this.txtDomicilio.TabIndex = 12;
@@ -171,7 +172,7 @@
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(592, 455);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(117, 22);
             this.txtTotal.TabIndex = 13;
@@ -182,7 +183,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(599, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -204,7 +205,7 @@
             this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRecibo";
             this.Text = "Recibo";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();

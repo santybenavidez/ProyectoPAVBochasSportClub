@@ -62,24 +62,27 @@
             // txtNombreSocio
             // 
             this.txtNombreSocio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txtNombreSocio.Location = new System.Drawing.Point(279, 43);
+            this.txtNombreSocio.Location = new System.Drawing.Point(372, 53);
+            this.txtNombreSocio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreSocio.Name = "txtNombreSocio";
             this.txtNombreSocio.ReadOnly = true;
-            this.txtNombreSocio.Size = new System.Drawing.Size(326, 20);
+            this.txtNombreSocio.Size = new System.Drawing.Size(433, 22);
             this.txtNombreSocio.TabIndex = 12;
             // 
             // txtNroSocio
             // 
-            this.txtNroSocio.Location = new System.Drawing.Point(91, 42);
+            this.txtNroSocio.Location = new System.Drawing.Point(121, 52);
+            this.txtNroSocio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNroSocio.Name = "txtNroSocio";
-            this.txtNroSocio.Size = new System.Drawing.Size(40, 20);
+            this.txtNroSocio.Size = new System.Drawing.Size(52, 22);
             this.txtNroSocio.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(137, 41);
+            this.button1.Location = new System.Drawing.Point(183, 50);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 21);
+            this.button1.Size = new System.Drawing.Size(47, 26);
             this.button1.TabIndex = 10;
             this.button1.Text = ". . . ";
             this.button1.UseVisualStyleBackColor = true;
@@ -88,27 +91,30 @@
             // lblNomSocio
             // 
             this.lblNomSocio.AutoSize = true;
-            this.lblNomSocio.Location = new System.Drawing.Point(199, 46);
+            this.lblNomSocio.Location = new System.Drawing.Point(265, 57);
+            this.lblNomSocio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomSocio.Name = "lblNomSocio";
-            this.lblNomSocio.Size = new System.Drawing.Size(74, 13);
+            this.lblNomSocio.Size = new System.Drawing.Size(97, 17);
             this.lblNomSocio.TabIndex = 9;
             this.lblNomSocio.Text = "Nombre Socio";
             // 
             // lblNroSocio
             // 
             this.lblNroSocio.AutoSize = true;
-            this.lblNroSocio.Location = new System.Drawing.Point(11, 46);
+            this.lblNroSocio.Location = new System.Drawing.Point(15, 57);
+            this.lblNroSocio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNroSocio.Name = "lblNroSocio";
-            this.lblNroSocio.Size = new System.Drawing.Size(74, 13);
+            this.lblNroSocio.Size = new System.Drawing.Size(97, 17);
             this.lblNroSocio.TabIndex = 8;
             this.lblNroSocio.Text = "Numero Socio";
             // 
             // lblBecas
             // 
             this.lblBecas.AutoSize = true;
-            this.lblBecas.Location = new System.Drawing.Point(12, 84);
+            this.lblBecas.Location = new System.Drawing.Point(16, 103);
+            this.lblBecas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBecas.Name = "lblBecas";
-            this.lblBecas.Size = new System.Drawing.Size(72, 13);
+            this.lblBecas.Size = new System.Drawing.Size(94, 17);
             this.lblBecas.TabIndex = 13;
             this.lblBecas.Text = "Nombre Beca";
             // 
@@ -116,42 +122,47 @@
             // 
             this.cmbBecas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBecas.FormattingEnabled = true;
-            this.cmbBecas.Location = new System.Drawing.Point(91, 81);
+            this.cmbBecas.Location = new System.Drawing.Point(121, 100);
+            this.cmbBecas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbBecas.Name = "cmbBecas";
-            this.cmbBecas.Size = new System.Drawing.Size(121, 21);
+            this.cmbBecas.Size = new System.Drawing.Size(160, 24);
             this.cmbBecas.TabIndex = 14;
             // 
             // dtpFechaIni
             // 
             this.dtpFechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaIni.Location = new System.Drawing.Point(374, 69);
+            this.dtpFechaIni.Location = new System.Drawing.Point(499, 85);
+            this.dtpFechaIni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaIni.Name = "dtpFechaIni";
-            this.dtpFechaIni.Size = new System.Drawing.Size(179, 20);
+            this.dtpFechaIni.Size = new System.Drawing.Size(237, 22);
             this.dtpFechaIni.TabIndex = 15;
             // 
             // dtpFechaFin
             // 
             this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaFin.Location = new System.Drawing.Point(374, 95);
+            this.dtpFechaFin.Location = new System.Drawing.Point(499, 117);
+            this.dtpFechaFin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpFechaFin.Name = "dtpFechaFin";
-            this.dtpFechaFin.Size = new System.Drawing.Size(179, 20);
+            this.dtpFechaFin.Size = new System.Drawing.Size(237, 22);
             this.dtpFechaFin.TabIndex = 16;
             // 
             // lblFechaIni
             // 
             this.lblFechaIni.AutoSize = true;
-            this.lblFechaIni.Location = new System.Drawing.Point(276, 75);
+            this.lblFechaIni.Location = new System.Drawing.Point(368, 92);
+            this.lblFechaIni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFechaIni.Name = "lblFechaIni";
-            this.lblFechaIni.Size = new System.Drawing.Size(92, 13);
+            this.lblFechaIni.Size = new System.Drawing.Size(119, 17);
             this.lblFechaIni.TabIndex = 17;
             this.lblFechaIni.Text = "Fecha inicio Beca";
             // 
             // lblFechaFin
             // 
             this.lblFechaFin.AutoSize = true;
-            this.lblFechaFin.Location = new System.Drawing.Point(276, 101);
+            this.lblFechaFin.Location = new System.Drawing.Point(368, 124);
+            this.lblFechaFin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFechaFin.Name = "lblFechaFin";
-            this.lblFechaFin.Size = new System.Drawing.Size(79, 13);
+            this.lblFechaFin.Size = new System.Drawing.Size(102, 17);
             this.lblFechaFin.TabIndex = 18;
             this.lblFechaFin.Text = "Fecha fin Beca";
             // 
@@ -167,50 +178,59 @@
             this.nombreBeca,
             this.fechaInicioBeca,
             this.fechaFinBeca});
-            this.dgvInscripcionBecas.Location = new System.Drawing.Point(7, 117);
+            this.dgvInscripcionBecas.Location = new System.Drawing.Point(9, 144);
+            this.dgvInscripcionBecas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvInscripcionBecas.Name = "dgvInscripcionBecas";
+            this.dgvInscripcionBecas.ReadOnly = true;
             this.dgvInscripcionBecas.RowHeadersVisible = false;
-            this.dgvInscripcionBecas.Size = new System.Drawing.Size(593, 150);
+            this.dgvInscripcionBecas.Size = new System.Drawing.Size(791, 185);
             this.dgvInscripcionBecas.TabIndex = 19;
             // 
             // idSocio
             // 
             this.idSocio.HeaderText = "Numero Socio";
             this.idSocio.Name = "idSocio";
+            this.idSocio.ReadOnly = true;
             this.idSocio.Width = 50;
             // 
             // nombreSocio
             // 
             this.nombreSocio.HeaderText = "Nombre Socio";
             this.nombreSocio.Name = "nombreSocio";
+            this.nombreSocio.ReadOnly = true;
             this.nombreSocio.Width = 150;
             // 
             // nroBeca
             // 
             this.nroBeca.HeaderText = "Numero Beca";
             this.nroBeca.Name = "nroBeca";
+            this.nroBeca.ReadOnly = true;
             this.nroBeca.Width = 50;
             // 
             // nombreBeca
             // 
             this.nombreBeca.HeaderText = "Nombre Beca";
             this.nombreBeca.Name = "nombreBeca";
+            this.nombreBeca.ReadOnly = true;
             // 
             // fechaInicioBeca
             // 
             this.fechaInicioBeca.HeaderText = "Fecha inicio Beca";
             this.fechaInicioBeca.Name = "fechaInicioBeca";
+            this.fechaInicioBeca.ReadOnly = true;
             // 
             // fechaFinBeca
             // 
             this.fechaFinBeca.HeaderText = "Fecha Fin Beca";
             this.fechaFinBeca.Name = "fechaFinBeca";
+            this.fechaFinBeca.ReadOnly = true;
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(620, 149);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(827, 183);
+            this.btnLimpiarCampos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(75, 43);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(100, 53);
             this.btnLimpiarCampos.TabIndex = 22;
             this.btnLimpiarCampos.Text = "Limpiar campos";
             this.btnLimpiarCampos.UseVisualStyleBackColor = true;
@@ -218,9 +238,10 @@
             // 
             // btnRecibo
             // 
-            this.btnRecibo.Location = new System.Drawing.Point(620, 100);
+            this.btnRecibo.Location = new System.Drawing.Point(827, 123);
+            this.btnRecibo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRecibo.Name = "btnRecibo";
-            this.btnRecibo.Size = new System.Drawing.Size(75, 43);
+            this.btnRecibo.Size = new System.Drawing.Size(100, 53);
             this.btnRecibo.TabIndex = 21;
             this.btnRecibo.Text = "Generar Recibo";
             this.btnRecibo.UseVisualStyleBackColor = true;
@@ -228,9 +249,10 @@
             // 
             // btnAñadir
             // 
-            this.btnAñadir.Location = new System.Drawing.Point(620, 51);
+            this.btnAñadir.Location = new System.Drawing.Point(827, 63);
+            this.btnAñadir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAñadir.Name = "btnAñadir";
-            this.btnAñadir.Size = new System.Drawing.Size(75, 43);
+            this.btnAñadir.Size = new System.Drawing.Size(100, 53);
             this.btnAñadir.TabIndex = 20;
             this.btnAñadir.Text = "Añadir";
             this.btnAñadir.UseVisualStyleBackColor = true;
@@ -238,50 +260,56 @@
             // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(256, 6);
+            this.txtDomicilio.Location = new System.Drawing.Point(341, 7);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(288, 20);
+            this.txtDomicilio.Size = new System.Drawing.Size(383, 22);
             this.txtDomicilio.TabIndex = 27;
             // 
             // lblDom
             // 
             this.lblDom.AutoSize = true;
-            this.lblDom.Location = new System.Drawing.Point(198, 9);
+            this.lblDom.Location = new System.Drawing.Point(264, 11);
+            this.lblDom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDom.Name = "lblDom";
-            this.lblDom.Size = new System.Drawing.Size(52, 13);
+            this.lblDom.Size = new System.Drawing.Size(68, 17);
             this.lblDom.TabIndex = 26;
             this.lblDom.Text = "Domicilio:";
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(73, 6);
+            this.txtCliente.Location = new System.Drawing.Point(97, 7);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtCliente.Size = new System.Drawing.Size(132, 22);
             this.txtCliente.TabIndex = 25;
             // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(12, 9);
+            this.lblCliente.Location = new System.Drawing.Point(16, 11);
+            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(55, 13);
+            this.lblCliente.Size = new System.Drawing.Size(74, 17);
             this.lblCliente.TabIndex = 24;
             this.lblCliente.Text = "Cliente: (*)";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgvInscripcionBecas);
-            this.groupBox1.Location = new System.Drawing.Point(8, 32);
+            this.groupBox1.Location = new System.Drawing.Point(11, 39);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(691, 288);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(921, 354);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             // 
             // frmInscripcionBeca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 398);
+            this.ClientSize = new System.Drawing.Size(948, 490);
             this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.lblDom);
             this.Controls.Add(this.txtCliente);
@@ -302,6 +330,7 @@
             this.Controls.Add(this.lblNroSocio);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmInscripcionBeca";
             this.Text = "Inscripcion Socio a Beca";
             this.Load += new System.EventHandler(this.frmInscripcionBeca_Load);
